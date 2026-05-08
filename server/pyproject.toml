@@ -1,7 +1,7 @@
 [project]
-name = "playaural-server"
+name = "PlaySonic-server"
 version = "1.0.0"
-description = "PlayAural Game Server"
+description = "PlaySonic Game Server"
 readme = "../README.md"
 requires-python = ">=3.11"
 dependencies = [
@@ -20,7 +20,7 @@ dev = [
 ]
 
 [project.scripts]
-playaural-server = "server.__main__:main"
+PlaySonic-server = "server.__main__:main"
 
 [build-system]
 requires = ["hatchling"]
@@ -33,3 +33,4 @@ pythonpath = [".."]
 
 [tool.hatch.build.targets.wheel]
 packages = ["."]
+

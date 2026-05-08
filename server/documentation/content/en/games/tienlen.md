@@ -20,7 +20,7 @@ Tien Len uses a standard 52-card deck. Each player receives 13 cards.
 \* \*\*Trick reset:\*\* When all other players pass, the last player who made a successful play wins the trick and may start a fresh one with any legal lead.
 \* \*\*Winning a hand:\*\* A hand ends immediately when one player gets rid of all their cards.
 
-In PlayAural, you select one or more cards from your hand, then use \*\*Play Selected Cards\*\* to commit that combination.
+In PlaySonic, you select one or more cards from your hand, then use \*\*Play Selected Cards\*\* to commit that combination.
 
 \*\*Valid Combinations\*\*
 
@@ -71,7 +71,7 @@ Southern Tien Len includes the famous chopping system for beating 2s and certain
 \* \*\*Four of a kind:\*\*
 \* \*\*Four consecutive pairs\*\* can chop a four of a kind.
 
-Important PlayAural rule choice:
+Important PlaySonic rule choice:
 
 \* In this implementation, \*\*three consecutive pairs cannot be used to open a fresh trick\*\*. They are treated as a reactive chopping combination, not an opening lead.
 
@@ -124,7 +124,7 @@ This means that in Northern mode, 2s are powerful but awkward. They can save you
 
 \*\*Scoring\*\*
 
-This PlayAural version scores by \*\*hand wins\*\* rather than money penalties.
+This PlaySonic version scores by \*\*hand wins\*\* rather than money penalties.
 
 \* The winner of each hand earns \*\*1 hand win\*\*.
 \* The match ends when a player reaches the selected target:
@@ -147,3 +147,4 @@ This PlayAural version scores by \*\*hand wins\*\* rather than money penalties.
 \* \*\*E:\*\* Read how many cards each player has left.
 \* \*\*V:\*\* Hear which variant the table is using.
 \* \*\*Shift+T:\*\* Check the turn timer.
+

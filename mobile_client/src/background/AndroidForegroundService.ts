@@ -56,7 +56,7 @@ class AndroidForegroundServiceManager {
       });
     } catch (error) {
       this.module = null;
-      console.warn("PlayAural: foreground service bootstrap failed.", error);
+      console.warn("PlaySonic: foreground service bootstrap failed.", error);
     }
   }
 
@@ -93,7 +93,7 @@ class AndroidForegroundServiceManager {
       }
       this.activeSignature = signature;
     } catch (error) {
-      console.warn("PlayAural: foreground service sync failed.", error);
+      console.warn("PlaySonic: foreground service sync failed.", error);
     }
   }
 
@@ -109,7 +109,7 @@ class AndroidForegroundServiceManager {
     try {
       await this.module.stop();
     } catch (error) {
-      console.warn("PlayAural: foreground service stop failed.", error);
+      console.warn("PlaySonic: foreground service stop failed.", error);
     }
   }
 }
@@ -119,3 +119,4 @@ export const androidForegroundService = new AndroidForegroundServiceManager();
 export function initializeAndroidForegroundService(): void {
   androidForegroundService.initialize();
 }
+

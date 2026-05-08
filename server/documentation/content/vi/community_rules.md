@@ -1,6 +1,6 @@
 \*\*Nội quy cộng đồng\*\*
 
-PlayAural hướng tới một môi trường thân thiện, công bằng và dễ tiếp cận. Những quy định dưới đây cho biết mọi người cần cư xử như thế nào. Khi sử dụng PlayAural, bạn đồng ý tuân theo các quy định này.
+PlaySonic hướng tới một môi trường thân thiện, công bằng và dễ tiếp cận. Những quy định dưới đây cho biết mọi người cần cư xử như thế nào. Khi sử dụng PlaySonic, bạn đồng ý tuân theo các quy định này.
 
 \*\*1. Tôn trọng người khác\*\*
 
@@ -41,4 +41,5 @@ Quản trị viên có thể cảnh báo, tắt tiếng, tạm khóa, đuổi kh
 
 \*\*7. Góp ý\*\*
 
-PlayAural vẫn tiếp tục được hoàn thiện. Mọi góp ý về khả năng tiếp cận, cách chơi và nếp sinh hoạt cộng đồng đều có ích. Nếu gặp vấn đề nghiêm trọng, hãy báo lại thay vì lợi dụng lỗi đó.
+PlaySonic vẫn tiếp tục được hoàn thiện. Mọi góp ý về khả năng tiếp cận, cách chơi và nếp sinh hoạt cộng đồng đều có ích. Nếu gặp vấn đề nghiêm trọng, hãy báo lại thay vì lợi dụng lỗi đó.
+

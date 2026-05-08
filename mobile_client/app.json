@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "PlayAural Mobile",
-    "slug": "playaural-mobile",
+    "name": "PlaySonic Mobile",
+    "slug": "PlaySonic-mobile",
     "version": "1.0.4.4",
     "newArchEnabled": false,
     "orientation": "portrait",
@@ -9,12 +9,12 @@
       "sounds/**/*"
     ],
     "android": {
-      "package": "one.ddt.playaural.mobile",
+      "package": "one.ddt.PlaySonic.mobile",
       "versionCode": 10404,
       "usesCleartextTraffic": true
     },
     "ios": {
-      "bundleIdentifier": "one.ddt.playaural.mobile"
+      "bundleIdentifier": "one.ddt.PlaySonic.mobile"
     },
     "extra": {
       "eas": {
@@ -40,7 +40,8 @@
           "microphonePermission": "Allow $(PRODUCT_NAME) to access your microphone for table voice chat."
         }
       ],
-      "./plugins/withPlayAuralBackgroundService"
+      "./plugins/withPlaySonicBackgroundService"
     ]
   }
 }
+

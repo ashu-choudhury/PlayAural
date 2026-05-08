@@ -1,5 +1,5 @@
 """
-Coup Game Implementation for PlayAural.
+Coup Game Implementation for PlaySonic.
 
 A game of deduction and deception. Players start with two influences (character cards)
 and two coins. The goal is to eliminate all other players' influences.
@@ -1526,3 +1526,4 @@ class CoupGame(Game):
     def get_alive_players(self) -> list[CoupPlayer]:
         """Get all alive players."""
         return [p for p in self.players if not getattr(p, "is_spectator", False) and not getattr(p, "is_dead", False)]
+

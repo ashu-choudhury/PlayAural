@@ -1,5 +1,5 @@
 """
-Documentation Manager for PlayAural.
+Documentation Manager for PlaySonic.
 Handles loading and serving markdown documentation files.
 """
 
@@ -72,3 +72,4 @@ class DocumentationManager:
             "donation": "donation",
             "contact": "contact",
         }
+

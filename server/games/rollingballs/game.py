@@ -1,5 +1,5 @@
 """
-Rolling Balls Game Implementation for PlayAural.
+Rolling Balls Game Implementation for PlaySonic.
 
 Take turns picking 1, 2, or 3 balls from a pipe. Watch out for negative balls!
 The player with the most points when the pipe empties wins.
@@ -931,3 +931,4 @@ class RollingBallsGame(Game):
         """End the current player's turn."""
         BotHelper.jolt_bots(self, ticks=random.randint(jolt_min, jolt_max))  # nosec B311
         self._on_turn_end()
+

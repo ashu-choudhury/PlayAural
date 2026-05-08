@@ -1,6 +1,6 @@
 window.LOCALES = {
     "en": {
-        "app-title": "PlayAural Web",
+        "app-title": "PlaySonic Web",
         "login-title": "Login",
         "login-server-label": "Server URL",
         "login-username-label": "Username",
@@ -54,8 +54,8 @@ window.LOCALES = {
         "common-error": "Error",
         "welcome": "Welcome, {username}.",
         "system-announcement": "System Announcement",
-        "dev-announcement-broadcast": "{dev} is a developer of PlayAural.",
-        "admin-announcement-broadcast": "{admin} is an administrator of PlayAural.",
+        "dev-announcement-broadcast": "{dev} is a developer of PlaySonic.",
+        "admin-announcement-broadcast": "{admin} is an administrator of PlaySonic.",
         "broadcast": "Broadcast: {message}",
         "main-ping-result": "Ping: {value}ms",
         "main-reconnecting-in-3s": "Reconnecting in {seconds} seconds...",
@@ -102,8 +102,8 @@ window.LOCALES = {
         "new-password-prompt": "New Password",
         "btn-submit-reset": "Reset Password",
 
-        "intro-text": "PlayAural is an audio-first online gaming platform designed for accessibility. Built on PlayPalace, it offers a shared space for casual players to enjoy various card, dice, and adventure games together on equal footing.",
-        "landing-title": "Welcome to PlayAural Web",
+        "intro-text": "PlaySonic is an audio-first online gaming platform designed for accessibility. Built on PlayPalace, it offers a shared space for casual players to enjoy various card, dice, and adventure games together on equal footing.",
+        "landing-title": "Welcome to PlaySonic Web",
         "btn-enter": "Login",
         "btn-register": "Register",
         "btn-play": "Play",
@@ -172,7 +172,7 @@ window.LOCALES = {
         "no-voices-found": "No voices found or still loading. Please try again in a moment or restart the browser."
     },
     "vi": {
-        "app-title": "PlayAural Web",
+        "app-title": "PlaySonic Web",
         "login-title": "Đăng nhập",
         "login-server-label": "Địa chỉ máy chủ (URL)",
         "login-username-label": "Tên đăng nhập",
@@ -226,8 +226,8 @@ window.LOCALES = {
         "common-error": "Lỗi",
         "welcome": "Chào mừng, {username}.",
         "system-announcement": "Thông báo hệ thống",
-        "dev-announcement-broadcast": "{dev} là nhà phát triển của PlayAural.",
-        "admin-announcement-broadcast": "{admin} là quản trị viên của PlayAural.",
+        "dev-announcement-broadcast": "{dev} là nhà phát triển của PlaySonic.",
+        "admin-announcement-broadcast": "{admin} là quản trị viên của PlaySonic.",
         "broadcast": "Thông báo chung: {message}",
         "main-ping-result": "Độ trễ (Ping): {value}ms",
         "main-reconnecting-in-3s": "Đang kết nối lại sau {seconds} giây...",
@@ -274,8 +274,8 @@ window.LOCALES = {
         "new-password-prompt": "Mật khẩu mới",
         "btn-submit-reset": "Đặt lại mật khẩu",
 
-        "intro-text": "PlayAural là nền tảng chơi game trực tuyến ưu tiên âm thanh, được thiết kế cho khả năng tiếp cận. Dựa trên PlayPalace, tôi mang đến một không gian chung để mọi người cùng thưởng thức các trò chơi bài, xúc xắc và phiêu lưu một cách bình đẳng.",
-        "landing-title": "Chào mừng bạn đến với PlayAural Web",
+        "intro-text": "PlaySonic là nền tảng chơi game trực tuyến ưu tiên âm thanh, được thiết kế cho khả năng tiếp cận. Dựa trên PlayPalace, tôi mang đến một không gian chung để mọi người cùng thưởng thức các trò chơi bài, xúc xắc và phiêu lưu một cách bình đẳng.",
+        "landing-title": "Chào mừng bạn đến với PlaySonic Web",
         "btn-enter": "Đăng nhập",
         "btn-register": "Đăng ký",
         "btn-play": "Chơi",
@@ -343,3 +343,4 @@ window.LOCALES = {
         "no-voices-found": "Không tìm thấy giọng đọc hoặc đang tải. Vui lòng thử lại sau giây lát hoặc khởi động lại trình duyệt."
     }
 };
+

@@ -26,7 +26,7 @@ import { androidForegroundService } from "../background/AndroidForegroundService
 import { useSelfVoicingGestures } from "../gestures/useSelfVoicingGestures";
 import { bundledSoundVersion } from "../generated/soundManifest";
 import { MobileLocalization } from "../i18n/localization";
-import { PlayAuralConnection } from "../network/PlayAuralConnection";
+import { PlaySonicConnection } from "../network/PlaySonicConnection";
 import type {
   AuthorizeSuccessPacket,
   ChatPacket,
@@ -59,13 +59,13 @@ import { MobileVoiceManager, type MobileVoiceConnectionState } from "../voice/Mo
 
 const MOBILE_CLIENT_VERSION = "1.0.4.4";
 const MOBILE_BUILD_STAMP = "2026-05-05 14:29:47 +07:00";
-const DEFAULT_SERVER_URL = "wss://playaural.ddt.one:443";
+const DEFAULT_SERVER_URL = "wss://PlaySonic.ddt.one:443";
 const APK_DOWNLOAD_URL =
-  "https://github.com/Daoductrung/PlayAural/releases/latest/download/PlayAural.apk";
-const CLIENT_CONFIG_STORAGE_KEY = "playaural.mobile.clientConfig";
-const CLIENT_PASSWORD_STORAGE_KEY = "playaural.mobile.password";
-const CLIENT_SV_STORAGE_KEY = "playaural.mobile.selfVoicing";
-const CLIENT_MIC_PERMISSION_REQUESTED_STORAGE_KEY = "playaural.mobile.voiceMicPermissionRequested";
+  "https://github.com/Daoductrung/PlaySonic/releases/latest/download/PlaySonic.apk";
+const CLIENT_CONFIG_STORAGE_KEY = "PlaySonic.mobile.clientConfig";
+const CLIENT_PASSWORD_STORAGE_KEY = "PlaySonic.mobile.password";
+const CLIENT_SV_STORAGE_KEY = "PlaySonic.mobile.selfVoicing";
+const CLIENT_MIC_PERMISSION_REQUESTED_STORAGE_KEY = "PlaySonic.mobile.voiceMicPermissionRequested";
 const WEB_SCREEN_READER_SUPPORT = Platform.OS === "web";
 const NATIVE_FOCUS_DELAY_MS = 80;
 
@@ -389,7 +389,7 @@ function toLocalizationParams(params: Record<string, unknown> | undefined): Reco
   return normalized;
 }
 
-export function PlayAuralApp() {
+export function PlaySonicApp() {
   const initialLocale = useMemo<"en" | "vi">(() => detectPreferredLocale(), []);
   const localization = useMemo(() => {
     const instance = new MobileLocalization();
@@ -1681,9 +1681,9 @@ export function PlayAuralApp() {
     return false;
   };
 
-  const connectionRef = useRef<PlayAuralConnection | null>(null);
+  const connectionRef = useRef<PlaySonicConnection | null>(null);
   if (!connectionRef.current) {
-    connectionRef.current = new PlayAuralConnection({
+    connectionRef.current = new PlaySonicConnection({
       onClose: (reason) => {
         leaveVoiceChat({
           announce: false,
@@ -1725,7 +1725,7 @@ export function PlayAuralApp() {
       },
       onPacket: (packet: ServerPacket) => {
         if (ENABLE_CLIENT_DEBUG_LOGS) {
-          console.info("PLAYAURAL_DEBUG Packet", packet.type);
+          console.info("PlaySonic_DEBUG Packet", packet.type);
         }
         if (packet.type === "authorize_success") {
           const authPacket = packet as AuthorizeSuccessPacket;
@@ -2095,7 +2095,7 @@ export function PlayAuralApp() {
 
   useEffect(() => {
     if (ENABLE_CLIENT_DEBUG_LOGS) {
-      console.info("PLAYAURAL_DEBUG App build", {
+      console.info("PlaySonic_DEBUG App build", {
         build: MOBILE_BUILD_STAMP,
         version: MOBILE_CLIENT_VERSION,
       });
@@ -5289,3 +5289,4 @@ const styles = StyleSheet.create({
     paddingVertical: 12,
   },
 });
+

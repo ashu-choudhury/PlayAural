@@ -1,10 +1,10 @@
-# Agents.md — AI Development Guide for PlayAural
+# Agents.md — AI Development Guide for PlaySonic
 
-This document is the authoritative reference for any AI assistant (Claude, Codex, or other) contributing to the PlayAural codebase. Follow every rule exactly. When in doubt, read the existing code — especially `lastcard/game.py` and `dominos/game.py` as canonical examples.
+This document is the authoritative reference for any AI assistant (Claude, Codex, or other) contributing to the PlaySonic codebase. Follow every rule exactly. When in doubt, read the existing code — especially `lastcard/game.py` and `dominos/game.py` as canonical examples.
 
 ## 1. Project Overview
 
-PlayAural is an **audio-first multiplayer online gaming platform** with full screen reader support. It has four first-party components:
+PlaySonic is an **audio-first multiplayer online gaming platform** with full screen reader support. It has four first-party components:
 
 | Component | Stack | Purpose |
 |-----------|-------|---------|
@@ -15,7 +15,7 @@ PlayAural is an **audio-first multiplayer online gaming platform** with full scr
 
 All communication is WebSocket JSON packets: `Packet(type: str, data: dict)`.
 
-PlayAural also supports **table-scoped real-time voice chat**. The game server authorizes access and tracks voice membership, while a separate LiveKit-based media service carries the actual audio stream. Voice traffic must never be merged into the gameplay WebSocket transport.
+PlaySonic also supports **table-scoped real-time voice chat**. The game server authorizes access and tracks voice membership, while a separate LiveKit-based media service carries the actual audio stream. Voice traffic must never be merged into the gameplay WebSocket transport.
 
 ---
 
@@ -148,7 +148,7 @@ Locking policy:
 - `SEQUENCE_LOCK_GAMEPLAY`: block gameplay actions only, while info/status actions remain available
 - `SEQUENCE_LOCK_ALL`: reserve for rare full-input freezes only
 
-Default rule: use `SEQUENCE_LOCK_GAMEPLAY` for almost every in-game cinematic flow. PlayAural should keep informational actions such as board reads, status checks, scores, and whose-turn available whenever possible.
+Default rule: use `SEQUENCE_LOCK_GAMEPLAY` for almost every in-game cinematic flow. PlaySonic should keep informational actions such as board reads, status checks, scores, and whose-turn available whenever possible.
 
 Bot rule:
 
@@ -400,7 +400,7 @@ def prestart_validate(self) -> list[str | tuple[str, dict]]:
 
 ### 6.1 Core Principle
 
-PlayAural is designed for visually impaired users. **Every game state change must be communicated through audio** — either TTS announcements or sound effects. The UI is navigated entirely by keyboard on desktop, by touch-driven turn menus on web, and by self-voicing gesture navigation on mobile.
+PlaySonic is designed for visually impaired users. **Every game state change must be communicated through audio** — either TTS announcements or sound effects. The UI is navigated entirely by keyboard on desktop, by touch-driven turn menus on web, and by self-voicing gesture navigation on mobile.
 
 ### 6.2 TTS Buffer Rules
 
@@ -846,3 +846,4 @@ Use this checklist when implementing a new game. Every item is mandatory.
 ### Project Files
 - [ ] Game count updated in `CLAUDE.md` and `README.md`
 - [ ] Game added to `README.md` Game Catalog (correct category)
+

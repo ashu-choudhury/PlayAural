@@ -1,5 +1,5 @@
 """
-Snakes and Ladders Game Implementation for PlayAural.
+Snakes and Ladders Game Implementation for PlaySonic.
 
 Classic board game where players race to 100.
 """
@@ -531,5 +531,6 @@ class SnakesAndLaddersGame(Game):
             )
             
         return lines
+
 
 

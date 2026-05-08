@@ -4,13 +4,13 @@ This file provides guidance to Claude Code and other AI assistants working in th
 
 ## Project Overview
 
-PlayAural is an audio-first multiplayer online gaming platform with four first-party components:
+PlaySonic is an audio-first multiplayer online gaming platform with four first-party components:
 - **`server/`** — Python async WebSocket server with game logic, auth, tables, persistence, localization, and ratings
 - **`client/`** — Python wxPython desktop client with screen reader-oriented keyboard UX
 - **`web_client/`** — Vanilla JS PWA web client with ARIA support and browser-based audio/TTS
 - **`mobile_client/`** — Expo / React Native / TypeScript mobile client with self-voicing gesture navigation
 
-PlayAural also supports table-scoped real-time voice chat. The game server authorizes access and tracks voice membership, while a separate LiveKit-based media service carries the actual audio stream.
+PlaySonic also supports table-scoped real-time voice chat. The game server authorizes access and tracks voice membership, while a separate LiveKit-based media service carries the actual audio stream.
 
 The project is open source under the **GNU GENERAL PUBLIC LICENSE**. See [LICENSE](LICENSE).
 
@@ -97,7 +97,7 @@ Important server-driven packets include:
 
 ### Voice Chat Architecture
 - Voice chat is scoped to a server-defined context, currently game tables.
-- The PlayAural game server remains the authority for whether a user may join a voice context.
+- The PlaySonic game server remains the authority for whether a user may join a voice context.
 - The media path is separate from gameplay networking. Gameplay continues over the normal WebSocket connection; live audio flows through the dedicated LiveKit service.
 - The server issues short-lived join packets, binds voice access to the caller's current table context, and closes that voice context when table membership ends.
 - Voice presence is runtime-only state. It is tied to the active table lifecycle and must not create long-lived database rows unless a future feature defines retention and cleanup rules explicitly.
@@ -312,8 +312,8 @@ Web rules:
 - table voice chat lives in the Chat area and must keep browser permission handling, ARIA announcements, and voice cleanup in sync with table lifecycle packets
 
 ### Mobile Client Architecture
-- **`mobile_client/src/app/PlayAuralApp.tsx`** — main app shell, auth flow, overlays, focus state
-- **`mobile_client/src/network/PlayAuralConnection.ts`** — WebSocket connection and packet handling
+- **`mobile_client/src/app/PlaySonicApp.tsx`** — main app shell, auth flow, overlays, focus state
+- **`mobile_client/src/network/PlaySonicConnection.ts`** — WebSocket connection and packet handling
 - **`mobile_client/src/audio/MobileAudioManager.ts`** — sound, music, ambience, fade, and crossfade handling
 - **`mobile_client/src/tts/TtsManager.ts`** — self-voicing speech manager
 - **`mobile_client/src/state/BufferStore.ts`** — message buffers/history
@@ -329,7 +329,7 @@ Mobile rules:
 - credentials are stored in SecureStore
 - saved credentials support auto-login with graceful fallback to manual login
 - version and sound-pack mismatches trigger a mandatory APK update prompt
-- the production default server URL is `wss://playaural.ddt.one:443`
+- the production default server URL is `wss://PlaySonic.ddt.one:443`
 - mobile speech preferences use `mobile_tts_engine`, `mobile_tts_voice`, and `mobile_tts_rate`
 - web speech preferences use `speech_mode`, `speech_voice`, and `speech_rate`
 - browser web-runtime tests expose browser/Web Speech voices, while Android builds expose device TTS voices through Expo Speech
@@ -347,3 +347,4 @@ The server currently registers **36 games**:
 - Mobile: `expo`, `react-native`, `expo-audio`, `expo-speech`, `@react-native-async-storage/async-storage`, `expo-secure-store`
 - Package manager: `uv` for Python components, `npm` for the mobile client
 - Languages: English and Vietnamese
+

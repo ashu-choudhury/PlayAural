@@ -1,6 +1,6 @@
 \*\*Xúc xắc màu\*\*
 
-Xúc xắc màu là bản chuyển thể của PlayAural từ trò \*Color Game\* quen thuộc ở các \*perya\* Philippines. Mọi người cùng xuống cửa màu, ba viên xúc xắc màu được tung chung, rồi từng cửa được tính thắng thua đúng theo số viên ra trúng màu đó.
+Xúc xắc màu là bản chuyển thể của PlaySonic từ trò \*Color Game\* quen thuộc ở các \*perya\* Philippines. Mọi người cùng xuống cửa màu, ba viên xúc xắc màu được tung chung, rồi từng cửa được tính thắng thua đúng theo số viên ra trúng màu đó.
 
 \*\*Lối chơi\*\*
 
@@ -123,3 +123,4 @@ Nếu nhiều người hòa nhau ở đầu bảng, thứ tự phân định ch�
 \* \*\*T:\*\* Nghe thông báo pha hiện tại.
 \* \*\*S:\*\* Nghe bảng vốn.
 \* \*\*Ctrl+U:\*\* Nghe những ai đang ngồi tại bàn.
+

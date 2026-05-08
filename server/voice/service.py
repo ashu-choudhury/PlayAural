@@ -34,18 +34,18 @@ class VoiceService:
     public_url: str = ""
     api_key: str = ""
     api_secret: str = ""
-    room_prefix: str = "playaural"
+    room_prefix: str = "PlaySonic"
     token_ttl_seconds: int = DEFAULT_TOKEN_TTL_SECONDS
 
     @classmethod
     def from_env(cls) -> "VoiceService":
-        enabled = os.environ.get("PLAYAURAL_VOICE_ENABLED", "").strip().lower() in {"1", "true", "yes", "on"}
-        provider = os.environ.get("PLAYAURAL_VOICE_PROVIDER", SUPPORTED_PROVIDER).strip().lower() or SUPPORTED_PROVIDER
-        public_url = os.environ.get("PLAYAURAL_VOICE_URL", "").strip()
-        api_key = os.environ.get("PLAYAURAL_VOICE_API_KEY", "").strip()
-        api_secret = os.environ.get("PLAYAURAL_VOICE_API_SECRET", "").strip()
-        room_prefix = os.environ.get("PLAYAURAL_VOICE_ROOM_PREFIX", "playaural").strip() or "playaural"
-        ttl_raw = os.environ.get("PLAYAURAL_VOICE_TOKEN_TTL_SECONDS", str(DEFAULT_TOKEN_TTL_SECONDS)).strip()
+        enabled = os.environ.get("PlaySonic_VOICE_ENABLED", "").strip().lower() in {"1", "true", "yes", "on"}
+        provider = os.environ.get("PlaySonic_VOICE_PROVIDER", SUPPORTED_PROVIDER).strip().lower() or SUPPORTED_PROVIDER
+        public_url = os.environ.get("PlaySonic_VOICE_URL", "").strip()
+        api_key = os.environ.get("PlaySonic_VOICE_API_KEY", "").strip()
+        api_secret = os.environ.get("PlaySonic_VOICE_API_SECRET", "").strip()
+        room_prefix = os.environ.get("PlaySonic_VOICE_ROOM_PREFIX", "PlaySonic").strip() or "PlaySonic"
+        ttl_raw = os.environ.get("PlaySonic_VOICE_TOKEN_TTL_SECONDS", str(DEFAULT_TOKEN_TTL_SECONDS)).strip()
         try:
             token_ttl_seconds = max(60, min(86400, int(ttl_raw)))
         except ValueError:
@@ -128,3 +128,4 @@ class VoiceService:
     def _safe_component(self, value: str) -> str:
         normalized = ROOM_COMPONENT_PATTERN.sub("_", value.strip())
         return normalized.strip("_")[:96]
+

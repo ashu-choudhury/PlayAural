@@ -1,1 +1,2 @@
-"""PlayAural Server."""
+"""PlaySonic Server."""
+

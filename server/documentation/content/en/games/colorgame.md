@@ -1,6 +1,6 @@
 \*\*Color Game\*\*
 
-Color Game is PlayAural's adaptation of the traditional Filipino \*perya\* color-dice betting game. Everyone bets on one or more colors, three color dice are rolled together, and each color bet is paid strictly according to how many dice showed that same color.
+Color Game is PlaySonic's adaptation of the traditional Filipino \*perya\* color-dice betting game. Everyone bets on one or more colors, three color dice are rolled together, and each color bet is paid strictly according to how many dice showed that same color.
 
 \*\*Gameplay\*\*
 
@@ -123,3 +123,4 @@ If players are tied at the top, ranking is broken in this exact order:
 \* \*\*T:\*\* Hear the current phase prompt.
 \* \*\*S:\*\* Hear the standings.
 \* \*\*Ctrl+U:\*\* Hear who is at the table.
+

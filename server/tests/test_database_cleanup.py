@@ -95,7 +95,7 @@ def test_prune_old_records(db):
     assert "mute_orphan" not in mutes
 
 def test_connect_can_skip_pruning_for_short_cli_operations(tmp_path):
-    db_path = tmp_path / "PlayAural.db"
+    db_path = tmp_path / "PlaySonic.db"
     database = Database(db_path)
     database.connect()
 
@@ -157,3 +157,4 @@ def test_delete_user_cascades(db):
 
     cursor.execute("SELECT COUNT(*) FROM users")
     assert cursor.fetchone()[0] == 0
+

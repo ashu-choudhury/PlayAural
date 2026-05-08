@@ -1,5 +1,5 @@
 {
-  "name": "playaural-mobile-client",
+  "name": "PlaySonic-mobile-client",
   "version": "1.0.4.4",
   "private": true,
   "license": "GPL-2.0-only",
@@ -38,3 +38,4 @@
     "typescript": "^5.9.3"
   }
 }
+

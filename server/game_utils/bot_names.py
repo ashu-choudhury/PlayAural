@@ -130,7 +130,7 @@ def normalize_bot_name(name: str) -> str:
 
 
 def normalize_pool_bot_name(name: str) -> str:
-    """Convert configured/generated pool entries into PlayAural-safe display names."""
+    """Convert configured/generated pool entries into PlaySonic-safe display names."""
     normalized = unicodedata.normalize("NFC", str(name or "")).strip()
     for old, new in _POOL_CHARACTER_REPLACEMENTS.items():
         normalized = normalized.replace(old, new)
@@ -228,3 +228,4 @@ def generate_unique_bot_name(
         if suffixed_names:
             return random.choice(suffixed_names)
         suffix += 1
+

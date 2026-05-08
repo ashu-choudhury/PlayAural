@@ -48,7 +48,7 @@ function ensureService(application, name, extraAttributes = {}) {
   application.service = services;
 }
 
-module.exports = function withPlayAuralBackgroundService(config) {
+module.exports = function withPlaySonicBackgroundService(config) {
   return withAndroidManifest(config, (nextConfig) => {
     const manifest = nextConfig.modResults.manifest;
     const application = manifest.application?.[0];
@@ -69,12 +69,12 @@ module.exports = function withPlayAuralBackgroundService(config) {
     ensureMetadata(
       application,
       "com.supersami.foregroundservice.notification_channel_name",
-      "PlayAural background activity",
+      "PlaySonic background activity",
     );
     ensureMetadata(
       application,
       "com.supersami.foregroundservice.notification_channel_description",
-      "Keeps PlayAural voice chat and audio active when needed.",
+      "Keeps PlaySonic voice chat and audio active when needed.",
     );
     ensureService(application, "com.supersami.foregroundservice.ForegroundService", {
       "android:exported": "false",
@@ -89,3 +89,4 @@ module.exports = function withPlayAuralBackgroundService(config) {
     return nextConfig;
   });
 };
+

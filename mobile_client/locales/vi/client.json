@@ -1,5 +1,5 @@
 {
-  "app-title": "PlayAural Mobile",
+  "app-title": "PlaySonic Mobile",
   "mode-main": "Menu",
   "mode-chat": "Trò chuyện",
   "mode-history": "Nhật ký",
@@ -50,7 +50,7 @@
   "voice-chat-mic-denied": "Quyền dùng mic đã bị từ chối. Hãy cho phép quyền microphone để nói trong trò chuyện thoại.",
   "voice-chat-mic-unsupported": "Thiết bị này không thể bật mic cho trò chuyện thoại.",
   "voice-chat-mic-permission-denied": "Quyền microphone đã bị từ chối. Bạn vẫn có thể nghe trong trò chuyện thoại, nhưng sẽ chưa thể nói cho đến khi cấp quyền mic.",
-  "background-service-title": "PlayAural đang hoạt động",
+  "background-service-title": "PlaySonic đang hoạt động",
   "background-service-voice": "Trò chuyện thoại đang chạy nền.",
   "background-service-voice-mic": "Mic trò chuyện thoại đang hoạt động trong nền.",
   "background-service-audio": "Âm thanh trò chơi đang chạy nền.",
@@ -169,7 +169,7 @@
   "update-cancel": "Hủy",
   "update-unknown-version": "không rõ",
   "logout-title": "Đăng xuất",
-  "logout-message": "Bạn có muốn đăng xuất và đóng PlayAural Mobile không?",
+  "logout-message": "Bạn có muốn đăng xuất và đóng PlaySonic Mobile không?",
   "logout-confirm": "Đăng xuất",
   "logout-cancel": "Hủy",
   "logout-complete": "Đã đăng xuất.",
@@ -180,3 +180,4 @@
   "footer-gestures-line-1": "Trò chơi có các cử chỉ được tích hợp sẵn. Hãy tắt trình đọc màn hình của bạn sau khi kết nối thành công đến trò chơi để có trải nghiệm chơi tốt nhất.",
   "footer-gestures-line-2": "Vuốt 1 ngón để di chuyển. Vuốt lên bằng 2 ngón để quay lại hoặc mở menu hành động. Vuốt sang phải bằng 2 ngón để mở trò chuyện. Vuốt sang trái bằng 2 ngón để mở nhật ký. Vuốt xuống bằng 2 ngón để mở menu phím tắt. Chạm 2 ngón để dừng đọc. Chạm 3 ngón để đọc lại thông báo gần nhất. Chạm nhanh 3 lần bằng 3 ngón để bật hoặc tắt tự đọc."
 }
+

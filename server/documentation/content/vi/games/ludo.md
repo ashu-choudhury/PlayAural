@@ -2,7 +2,7 @@
 
 
 
-Cờ cá ngựa trong PlayAural là trò chơi đua quân theo kiểu bàn cờ bốn màu quen thuộc. Mỗi người chơi điều khiển bốn quân của mình, lần lượt \*\*xuất chuồng\*\*, chạy quanh đường đua chung, rồi đưa quân vào \*\*đường về đích\*\*. Người đầu tiên đưa đủ cả bốn quân về đích sẽ thắng ngay ván cờ.
+Cờ cá ngựa trong PlaySonic là trò chơi đua quân theo kiểu bàn cờ bốn màu quen thuộc. Mỗi người chơi điều khiển bốn quân của mình, lần lượt \*\*xuất chuồng\*\*, chạy quanh đường đua chung, rồi đưa quân vào \*\*đường về đích\*\*. Người đầu tiên đưa đủ cả bốn quân về đích sẽ thắng ngay ván cờ.
 
 
 
@@ -98,7 +98,7 @@ Khi chạm giới hạn này, hình phạt sẽ được áp dụng: toàn bộ 
 
 
 
-PlayAural dùng cách tính thắng thua rất trực tiếp cho Cờ cá ngựa:
+PlaySonic dùng cách tính thắng thua rất trực tiếp cho Cờ cá ngựa:
 
 
 
@@ -137,3 +137,4 @@ Chủ bàn có thể chỉnh các mục sau trước khi bắt đầu:
 \* \*\*T:\*\* Kiểm tra đang là lượt của ai.
 
 \* \*\*S:\*\* Kiểm tra bảng điểm hiện tại.
+

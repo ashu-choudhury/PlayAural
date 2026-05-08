@@ -14,7 +14,7 @@ from typing import Dict, Any, Optional, List
 from datetime import datetime
 
 # Keyring service name used for all stored credentials.
-_KEYRING_SERVICE = "PlayAural"
+_KEYRING_SERVICE = "PlaySonic"
 
 
 def _keyring_key(server_id: str, account_id: str) -> str:
@@ -95,16 +95,16 @@ class ConfigManager:
         """Initialize the config manager.
 
         Args:
-            base_path: Base directory path. Defaults to %APPDATA%/ddt.one/PlayAural/
+            base_path: Base directory path. Defaults to %APPDATA%/ddt.one/PlaySonic/
         """
         if base_path is None:
             import os
             appdata = os.getenv("APPDATA")
             if appdata:
-                base_path = Path(appdata) / "ddt.one" / "PlayAural"
+                base_path = Path(appdata) / "ddt.one" / "PlaySonic"
             else:
                 # Fallback if APPDATA is not set
-                base_path = Path.home() / "ddt.one" / "PlayAural"
+                base_path = Path.home() / "ddt.one" / "PlaySonic"
 
         self.base_path = base_path
         self.identities_path = base_path / "identities.json"
@@ -587,3 +587,4 @@ class ConfigManager:
             return [self._deep_copy(item) for item in obj]
         else:
             return obj
+

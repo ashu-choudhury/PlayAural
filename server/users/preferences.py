@@ -1,4 +1,4 @@
-"""User preferences for PlayAural."""
+"""User preferences for PlaySonic."""
 
 from dataclasses import dataclass, field
 from enum import Enum
@@ -124,3 +124,4 @@ class UserPreferences:
                 data.get("dice_keeping_style", "index_based")
             ),
         )
+

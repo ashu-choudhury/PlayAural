@@ -1,4 +1,4 @@
-"""Administration functionality for the PlayAural server."""
+"""Administration functionality for the PlaySonic server."""
 
 import functools
 import asyncio
@@ -1660,3 +1660,4 @@ class AdministrationManager:
                 target_user.speak_l("you-have-been-unmuted", buffer="system")
 
         self._show_unmute_menu(admin)
+

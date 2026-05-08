@@ -1,7 +1,8 @@
 {
-  "name": "playaural-web-client",
+  "name": "PlaySonic-web-client",
   "private": true,
   "dependencies": {
     "livekit-client": "^2.18.2"
   }
 }
+

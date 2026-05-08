@@ -1,2 +1,3 @@
-﻿"""Test suite for PlayAural."""
+"""Test suite for PlaySonic."""
+
 

@@ -1,6 +1,6 @@
 \*\*Liên hệ\*\*
 
-Hãy dùng trang này khi bạn cần liên hệ trực tiếp với người duy trì PlayAural. Bạn có thể liên hệ để hỏi về dự án, góp ý khả năng tiếp cận, báo lỗi, báo vấn đề cộng đồng, hỏi về quyên góp, hoặc trao đổi các nội dung liên quan đến PlayAural.
+Hãy dùng trang này khi bạn cần liên hệ trực tiếp với người duy trì PlaySonic. Bạn có thể liên hệ để hỏi về dự án, góp ý khả năng tiếp cận, báo lỗi, báo vấn đề cộng đồng, hỏi về quyên góp, hoặc trao đổi các nội dung liên quan đến PlaySonic.
 
 \*\*Trước khi liên hệ\*\*
 
@@ -19,7 +19,7 @@ Hãy dùng trang này khi bạn cần liên hệ trực tiếp với người du
 
 Để việc phản hồi rõ ràng và nhanh hơn, hãy gửi kèm các thông tin liên quan:
 
-\* Tên người dùng PlayAural của bạn, nếu câu hỏi liên quan đến tài khoản.
+\* Tên người dùng PlaySonic của bạn, nếu câu hỏi liên quan đến tài khoản.
 \* Trò chơi hoặc tính năng đang gặp vấn đề.
 \* Ứng dụng bạn đang dùng: máy tính, trình duyệt, hoặc di động.
 \* Mô tả ngắn gọn về lỗi, câu hỏi, hoặc yêu cầu.
@@ -36,3 +36,4 @@ Nếu bạn cần báo cáo quấy rối, tin nhắn rác, gian lận, vấn đ�
 \*\*Thời gian phản hồi\*\*
 
 Tin nhắn sẽ được trả lời khi có thời gian. Một số vấn đề có thể cần xem xét lâu hơn, đặc biệt là tài khoản, kiểm duyệt, máy chủ, hoặc lỗi kỹ thuật.
+

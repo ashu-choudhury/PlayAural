@@ -15,7 +15,7 @@ class SoundCacher:
              error_str = str(e)
              if "14" in error_str or "already initialized" in error_str:
                  import logging
-                 logging.getLogger("playaural").info("SoundCacher: BASS already initialized, proceeding.")
+                 logging.getLogger("PlaySonic").info("SoundCacher: BASS already initialized, proceeding.")
                  # If already initialized, we don't need to do anything, 
                  # BUT we might need an Output object? 
                  # sound_lib.output.Output() calls BASS_Init. 
@@ -23,7 +23,7 @@ class SoundCacher:
                  pass
              else:
                  import logging
-                 logging.getLogger("playaural").error(f"Failed to initialize sound_lib Output: {e}")
+                 logging.getLogger("PlaySonic").error(f"Failed to initialize sound_lib Output: {e}")
                  raise e
 
     def play(self, file_name, pan=0.0, volume=1.0, pitch=1.0):
@@ -48,3 +48,4 @@ class SoundCacher:
         for sound in self.refs[:]:
             if not sound.is_playing:
                 self.refs.remove(sound)
+

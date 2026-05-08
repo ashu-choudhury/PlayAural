@@ -1,4 +1,4 @@
-"""Sound and music manager for PlayAural client."""
+"""Sound and music manager for PlaySonic client."""
 
 import os
 import threading
@@ -794,3 +794,4 @@ class SoundManager:
             AudioPlaylist object or None if not found
         """
         return self.playlists.get(playlist_id)
+

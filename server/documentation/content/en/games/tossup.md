@@ -40,7 +40,7 @@ How you bust depends on the rules variant chosen at the \*\*table\*\*:
 
 \* \*\*Standard (Default):\*\* You bust if you roll \*\*no green dice\*\* and at least one red die. You need at least one green to stay alive unless the roll is entirely yellow.
 
-\* \*\*PlayAural:\*\* You bust only if \*\*every single die\*\* lands on red (no greens and no yellows at all).
+\* \*\*PlaySonic:\*\* You bust only if \*\*every single die\*\* lands on red (no greens and no yellows at all).
 
 
 
@@ -62,7 +62,7 @@ The game continues until a player or team reaches the target score (default 100)
 
 \* \*\*Starting Dice:\*\* How many dice each player rolls per turn (default 10, range 5-20).
 
-\* \*\*Rules Variant:\*\* Standard (bust = no green + at least one red) or PlayAural (bust = all dice red).
+\* \*\*Rules Variant:\*\* Standard (bust = no green + at least one red) or PlaySonic (bust = all dice red).
 
 
 
@@ -73,4 +73,5 @@ The game continues until a player or team reaches the target score (default 100)
 \* \*\*R:\*\* Roll the dice.
 
 \* \*\*B:\*\* Bank your points.
+
 

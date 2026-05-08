@@ -17,13 +17,13 @@ powershell -NoProfile -Command "Get-ChildItem -Path . -Recurse -Directory -Filte
 
 echo [3/4] Removing server data and logs...
 echo [3/4] Removing local server development data...
-if exist "server\playaural.db" (
-    del /f /q "server\playaural.db"
-    echo Deleted server\playaural.db
+if exist "server\PlaySonic.db" (
+    del /f /q "server\PlaySonic.db"
+    echo Deleted server\PlaySonic.db
 )
-if exist "playaural.db" (
-    del /f /q "playaural.db"
-    echo Deleted playaural.db
+if exist "PlaySonic.db" (
+    del /f /q "PlaySonic.db"
+    echo Deleted PlaySonic.db
 )
 if exist "server\errors.log" (
     del /f /q "server\errors.log"
@@ -38,11 +38,12 @@ if exist "server\database" (
     echo Deleted server\database directory
 )
 
-echo [4/4] Removing client configuration (.playaural)...
-powershell -NoProfile -Command "$path = Join-Path $env:APPDATA 'ddt.one\PlayAural'; if (Test-Path $path) { Write-Host 'Deleting: ' $path; Remove-Item -LiteralPath $path -Recurse -Force } else { Write-Host 'Config not found (clean).' }"
+echo [4/4] Removing client configuration (.PlaySonic)...
+powershell -NoProfile -Command "$path = Join-Path $env:APPDATA 'ddt.one\PlaySonic'; if (Test-Path $path) { Write-Host 'Deleting: ' $path; Remove-Item -LiteralPath $path -Recurse -Force } else { Write-Host 'Config not found (clean).' }"
 
 echo ==========================================
 echo CLEANUP COMPLETE!
 echo You can now restart the application freshly.
 echo ==========================================
 pause
+

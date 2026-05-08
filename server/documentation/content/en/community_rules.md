@@ -1,6 +1,6 @@
 \*\*Community Rules\*\*
 
-PlayAural is meant to be friendly, fair, and welcoming. These rules explain how everyone is expected to behave. By using PlayAural, you agree to follow them.
+PlaySonic is meant to be friendly, fair, and welcoming. These rules explain how everyone is expected to behave. By using PlaySonic, you agree to follow them.
 
 \*\*1. Respect Other People\*\*
 
@@ -41,4 +41,5 @@ The administrator may warn, mute, suspend, kick, or ban accounts that seriously 
 
 \*\*7. Feedback\*\*
 
-PlayAural continues to grow. Feedback about accessibility, gameplay, and community issues is always useful. If you discover a serious problem, report it instead of exploiting it.
+PlaySonic continues to grow. Feedback about accessibility, gameplay, and community issues is always useful. If you discover a serious problem, report it instead of exploiting it.
+

@@ -25,7 +25,7 @@ class UpdaterApp:
         
         # Setup Window
         self.root = tk.Tk()
-        self.root.title("PlayAural Updater")
+        self.root.title("PlaySonic Updater")
         self.root.geometry("400x150")
         self.root.resizable(False, False)
         
@@ -64,7 +64,7 @@ class UpdaterApp:
         try:
             # 1. Wait for Parent Process to Exit
             if self.wait_pid:
-                self.log(f"Waiting for PlayAural (PID {self.wait_pid}) to close...")
+                self.log(f"Waiting for PlaySonic (PID {self.wait_pid}) to close...")
                 try:
                     proc = psutil.Process(self.wait_pid)
                     proc.wait(timeout=10) # Wait up to 10 seconds
@@ -186,7 +186,7 @@ class UpdaterApp:
         self.root.mainloop()
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="PlayAural Auto-Updater")
+    parser = argparse.ArgumentParser(description="PlaySonic Auto-Updater")
     parser.add_argument("--zip", required=True, help="Path to the update zip file")
     parser.add_argument("--target", required=True, help="Target directory (contains executable)")
     parser.add_argument("--exe", required=True, help="Name of the executable to launch")
@@ -205,3 +205,4 @@ if __name__ == "__main__":
 
     app = UpdaterApp(args.zip, args.target, args.exe, args.pid, args.extract_dir)
     app.run()
+

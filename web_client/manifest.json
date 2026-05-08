@@ -1,6 +1,6 @@
 {
-  "name": "PlayAural",
-  "short_name": "PlayAural",
+  "name": "PlaySonic",
+  "short_name": "PlaySonic",
   "id": "/",
   "scope": "/",
   "description": "Audio-first online gaming platform designed for accessibility.",
@@ -29,3 +29,4 @@
     }
   ]
 }
+

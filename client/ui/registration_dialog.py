@@ -1,4 +1,4 @@
-"""Registration dialog for PlayAural client."""
+"""Registration dialog for PlaySonic client."""
 
 import re
 import wx
@@ -236,3 +236,4 @@ class RegistrationDialog(wx.Dialog):
     def on_cancel(self, event):
         """Handle cancel button click."""
         self.EndModal(wx.ID_CANCEL)
+

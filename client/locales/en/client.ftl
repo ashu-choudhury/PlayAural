@@ -6,7 +6,7 @@ main-menu-label = Menu
 main-edit-label = Edit
 main-chat-label = Chat
 main-history-label = History
-main-window-title = PlayAural { $version }
+main-window-title = PlaySonic { $version }
 main-ambience-volume = Ambience: { $value }%
 main-music-volume = Music: { $value }%
 main-ping-result = Ping: { $value }ms
@@ -71,7 +71,7 @@ auth-error-user-not-found = User does not exist.
 auth-registration-success = Registration successful! You can now log in with your credentials.
 auth-username-taken = Username already taken. Please choose a different username.
 
-login-welcome-title = Welcome to PlayAural
+login-welcome-title = Welcome to PlaySonic
 login-welcome-info = Please log in or register to continue.
 login-logged-in-as = Logged in as: { $username }
 login-btn-login-now = Login Now
@@ -178,3 +178,4 @@ error-email-taken = This email is already in use by another account.
 
 auth-error-rate-limit = Too many failed login attempts. Please try again in 15 minutes.
 auth-auto-login-disabled = Auto-login has been disabled for this account. Please log in manually and update your credentials if needed.
+

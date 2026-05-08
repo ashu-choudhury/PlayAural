@@ -18,7 +18,7 @@ Người cuối cùng còn giữ chip sẽ giành chiến thắng.
 
 
 
-PlayAural hỗ trợ từ 2 đến 20 người chơi cho trò chơi này. Khi bắt đầu, mỗi người nhận được một số lượng chip nhất định (mặc định là 3, có thể chỉnh từ 1 đến 10). Thứ tự lượt chơi diễn ra xoay vòng quanh bàn.
+PlaySonic hỗ trợ từ 2 đến 20 người chơi cho trò chơi này. Khi bắt đầu, mỗi người nhận được một số lượng chip nhất định (mặc định là 3, có thể chỉnh từ 1 đến 10). Thứ tự lượt chơi diễn ra xoay vòng quanh bàn.
 
 
 
@@ -79,4 +79,5 @@ Trò chơi kết thúc ngay lập tức khi chỉ còn một người chơi duy 
 \* \*\*R:\*\* Gieo xúc xắc.
 
 \* \*\*C:\*\* Kiểm tra số chip trong hũ giữa.
+
 

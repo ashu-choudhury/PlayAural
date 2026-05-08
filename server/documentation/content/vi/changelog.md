@@ -190,7 +190,7 @@ Thứ Bảy 11 Tháng Tư 2026
 
 Cập nhật ứng dụng di động:
 
-Đã chính thức ra mắt ứng dụng di động cho nền tảng PlayAural. Hiện tại, ứng dụng mới chỉ hỗ trợ trên các thiết bị Android.
+Đã chính thức ra mắt ứng dụng di động cho nền tảng PlaySonic. Hiện tại, ứng dụng mới chỉ hỗ trợ trên các thiết bị Android.
 
 Đã tích hợp hệ thống tự phát giọng nói (self-voicing) ngay bên trong ứng dụng. Điều này có nghĩa là bạn có thể tắt hẳn trình đọc màn hình của điện thoại mà vẫn chơi game được bình thường. Chúng tôi cũng rất khuyến khích bạn làm như vậy, vì tắt trình đọc màn hình hệ thống sẽ giúp bạn sử dụng các cử chỉ vuốt chạm và thao tác nhanh của trò chơi một cách mượt mà, không bị gián đoạn.
 
@@ -312,7 +312,7 @@ Thứ Sáu 27 Tháng Ba 2026
 
 Thứ Tư 25 Tháng Ba 2026
 
-Chào mừng bạn đến với phiên bản đầu tiên của PlayAural. Đây là một nền tảng giải trí ưu tiên âm thanh, được thiết kế để hoàn toàn tiếp cận cho người mù.
+Chào mừng bạn đến với phiên bản đầu tiên của PlaySonic. Đây là một nền tảng giải trí ưu tiên âm thanh, được thiết kế để hoàn toàn tiếp cận cho người mù.
 
 Đã thêm 25 trò chơi đa dạng thuộc nhiều nhóm trò chơi, bao gồm game bài như Bài 99, game xúc xắc, game chiến thuật như Tàu chiến, và game tương tác xã hội như Đảo chính.
 
@@ -327,4 +327,5 @@ Chào mừng bạn đến với phiên bản đầu tiên của PlayAural. Đây
 Đã thêm chế độ khán giả, cho phép người chơi tham gia phòng để theo dõi các ván đấu đang diễn ra.
 
 Đã thêm hệ thống phím tắt tiện lợi cho người dùng máy tính và giao diện nút bấm đơn giản, dễ thao tác cho người chơi trên thiết bị di động.
+
 

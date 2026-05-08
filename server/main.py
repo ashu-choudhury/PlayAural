@@ -1,4 +1,4 @@
-"""Entry point for running the PlayAural server with uv run main.py."""
+"""Entry point for running the PlaySonic server with uv run main.py."""
 
 import argparse
 import asyncio
@@ -36,7 +36,7 @@ except ImportError:
 def main():
     """Main entry point."""
     parser = argparse.ArgumentParser(
-        description="PlayAural Server",
+        description="PlaySonic Server",
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog="""
 Examples:
@@ -83,7 +83,7 @@ Examples:
         parser.error("Both --ssl-cert and --ssl-key must be provided together")
 
     protocol = "wss" if args.ssl_cert else "ws"
-    print(f"Starting PlayAural v{VERSION} server on {protocol}://{args.host}:{args.port}")
+    print(f"Starting PlaySonic v{VERSION} server on {protocol}://{args.host}:{args.port}")
 
 
 
@@ -99,3 +99,4 @@ Examples:
 
 if __name__ == "__main__":
     main()
+

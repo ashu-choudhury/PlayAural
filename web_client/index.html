@@ -7,9 +7,9 @@
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="apple-mobile-web-app-title" content="PlayAural">
+    <meta name="apple-mobile-web-app-title" content="PlaySonic">
     <meta name="format-detection" content="telephone=no">
-    <title>PlayAural Web</title>
+    <title>PlaySonic Web</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="lang-selector.css">
     <link rel="shortcut icon" href="icon.png" type="image/png">
@@ -56,7 +56,7 @@
     <!-- Landing Screen -->
     <div id="landing-screen" class="screen-container">
         <div class="auth-box landing-content">
-            <h1 id="landing-title">Welcome to PlayAural Web</h1>
+            <h1 id="landing-title">Welcome to PlaySonic Web</h1>
 
             <div class="language-selector">
                 <button type="button" onclick="Game.setLanguage('en')" class="lang-btn">English</button>
@@ -64,7 +64,7 @@
             </div>
 
             <p id="intro-text" class="intro-text" style="margin: 20px 0; line-height: 1.5;">
-                PlayAural is an audio-first online gaming platform designed for accessibility. Built on PlayPalace, it
+                PlaySonic is an audio-first online gaming platform designed for accessibility. Built on PlayPalace, it
                 offers a shared space for casual players to enjoy various card, dice, and adventure games together on
                 equal footing.
             </p>
@@ -106,7 +106,7 @@
                     Web is optimized for mobile. On Windows, please use the desktop client.
                 </p>
                 <a id="btn-download-win"
-                    href="https://github.com/Daoductrung/PlayAural/releases/latest/download/PlayAural.zip"
+                    href="https://github.com/Daoductrung/PlaySonic/releases/latest/download/PlaySonic.zip"
                     target="_blank" class="button"
                     style="display: inline-block; text-decoration: none; background-color: #607d8b; color: white; padding: 10px 20px; border-radius: 4px; border: none; font-family: inherit; cursor: pointer;">
                     Download for Windows
@@ -118,12 +118,12 @@
     <!-- Login Screen -->
     <div id="login-screen" class="screen-container hidden">
         <div class="auth-box">
-            <h1 id="login-title">PlayAural Web</h1>
+            <h1 id="login-title">PlaySonic Web</h1>
 
             <form id="login-form">
                 <div class="form-group" style="display: none;">
                     <label for="server-url" id="login-server-label">Server URL</label>
-                    <input type="text" id="server-url" value="wss://playaural.ddt.one:443" required autocorrect="off" autocapitalize="off" spellcheck="false" inputmode="url" enterkeyhint="next">
+                    <input type="text" id="server-url" value="wss://PlaySonic.ddt.one:443" required autocorrect="off" autocapitalize="off" spellcheck="false" inputmode="url" enterkeyhint="next">
                 </div>
                 <div class="form-group">
                     <label for="username" id="login-username-label">Username</label>
@@ -213,7 +213,7 @@
             <form id="register-form">
                 <div class="form-group" style="display: none;">
                     <label for="reg-server-url" id="reg-server-label">Server URL</label>
-                    <input type="text" id="reg-server-url" value="wss://playaural.ddt.one:443" required autocorrect="off" autocapitalize="off" spellcheck="false" inputmode="url" enterkeyhint="next">
+                    <input type="text" id="reg-server-url" value="wss://PlaySonic.ddt.one:443" required autocorrect="off" autocapitalize="off" spellcheck="false" inputmode="url" enterkeyhint="next">
                 </div>
                 <div class="form-group">
                     <label for="reg-username" id="reg-username-label">Username</label>
@@ -380,3 +380,4 @@
 </body>
 
 </html>
+

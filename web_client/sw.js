@@ -1,4 +1,4 @@
-const CACHE_NAME = 'playaural-v1.0.4.4';
+const CACHE_NAME = 'PlaySonic-v1.0.4.4';
 
 // Minimal impact: only cache core files to ensure installability
 // We do NOT preload large assets.
@@ -65,3 +65,4 @@ self.addEventListener('fetch', event => {
             })
     );
 });
+

@@ -27,7 +27,7 @@ htmlcov/
 config/*.json
 !config/default_*.json
 identities.json
-PlayAural.db
+PlaySonic.db
 errors.log
 .vscode/
 .idea/
@@ -46,3 +46,4 @@ PRIVATE_ANDROID_BUILD_GUIDE.md
 *.jks
 *.keystore
 *keystore*credential*.md
+

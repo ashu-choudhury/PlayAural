@@ -1,4 +1,4 @@
-"""Shared SSL context factory for the PlayAural client.
+"""Shared SSL context factory for the PlaySonic client.
 
 A single place that encodes the two-tier SSL policy used everywhere the
 client opens a WebSocket connection:
@@ -14,7 +14,7 @@ def make_ssl_context(server_url: str):
     """Return an SSL context appropriate for *server_url*, or ``None``.
 
     Args:
-        server_url: WebSocket URL, e.g. ``"wss://playaural.ddt.one"`` or
+        server_url: WebSocket URL, e.g. ``"wss://PlaySonic.ddt.one"`` or
                     ``"ws://localhost:8000"``.
 
     Returns:
@@ -31,3 +31,4 @@ def make_ssl_context(server_url: str):
         ctx.check_hostname = False
         ctx.verify_mode = ssl.CERT_NONE
     return ctx
+

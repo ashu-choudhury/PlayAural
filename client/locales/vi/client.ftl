@@ -6,7 +6,7 @@ main-menu-label = Menu
 main-edit-label = Chỉnh sửa
 main-chat-label = Trò chuyện
 main-history-label = Nhật ký
-main-window-title = PlayAural { $version }
+main-window-title = PlaySonic { $version }
 main-ambience-volume = Môi trường: { $value }%
 main-music-volume = Nhạc nền: { $value }%
 main-ping-result = Độ trễ: { $value }ms
@@ -59,7 +59,7 @@ main-reconnecting-in-3s = Máy chủ đang khởi động lại. Đang kết n�
 main-reconnecting = Đang kết nối lại...
 main-connection-failed = Không thể bắt đầu kết nối tới máy chủ.
 
-login-title = Đăng nhập PlayAural
+login-title = Đăng nhập PlaySonic
 login-account-label = Tài khoản:
 login-login-btn = Đăng nhập
 login-error-select-server = Vui lòng chọn một máy chủ
@@ -71,7 +71,7 @@ auth-error-user-not-found = Người dùng không tồn tại.
 auth-registration-success = Đăng ký thành công! Giờ bạn có thể đăng nhập bằng tài khoản này.
 auth-username-taken = Tên đăng nhập đã được sử dụng. Vui lòng chọn tên khác.
 
-login-welcome-title = Chào mừng bạn đến với PlayAural
+login-welcome-title = Chào mừng bạn đến với PlaySonic
 login-welcome-info = Vui lòng đăng nhập hoặc đăng ký để tiếp tục.
 login-logged-in-as = Đã đăng nhập với tên: { $username }
 login-btn-login-now = Đăng nhập ngay
@@ -87,7 +87,7 @@ login-manual-title = Đăng nhập
 login-failed-title = Đăng nhập thất bại
 login-info-logging-in = Đang đăng nhập...
 
-reg-dialog-title = Tạo tài khoản PlayAural
+reg-dialog-title = Tạo tài khoản PlaySonic
 reg-title = Tạo tài khoản mới
 reg-info = Vui lòng tạo tên đăng nhập và mật khẩu để bắt đầu chơi.
 reg-username-label = Tên đăng nhập:
@@ -178,3 +178,4 @@ error-email-taken = Email này đã được sử dụng bởi một tài khoả
 
 auth-error-rate-limit = Quá nhiều lần đăng nhập thất bại. Vui lòng thử lại sau 15 phút.
 auth-auto-login-disabled = Tự động đăng nhập đã bị tắt cho tài khoản này. Vui lòng đăng nhập thủ công và cập nhật thông tin đăng nhập nếu cần.
+

@@ -1,5 +1,5 @@
 """
-Buffer System for PlayAural Client
+Buffer System for PlaySonic Client
 Manages multiple message buffers with navigation and mute capabilities.
 Ported from XG Legends buffer_system.lua
 """
@@ -239,3 +239,4 @@ class BufferSystem:
         for buffer_name in self.buffers:
             self.buffers[buffer_name] = []
             self.buffer_positions[buffer_name] = 0
+

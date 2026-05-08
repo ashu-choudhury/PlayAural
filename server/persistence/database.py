@@ -81,12 +81,12 @@ class SavedTableRecord:
 
 class Database:
     """
-    SQLite database for PlayAural persistence.
+    SQLite database for PlaySonic persistence.
 
     Stores users and tables as specified in persistence.md.
     """
 
-    def __init__(self, db_path: str | Path = "PlayAural.db"):
+    def __init__(self, db_path: str | Path = "PlaySonic.db"):
         self.db_path = Path(db_path)
         self._conn: sqlite3.Connection | None = None
 
@@ -388,7 +388,7 @@ class Database:
         self._conn.commit()
 
         # Log results
-        logger = logging.getLogger("playaural.db.prune")
+        logger = logging.getLogger("PlaySonic.db.prune")
         if deleted_games > 0 or deleted_saves > 0 or deleted_bans > 0 or deleted_requests > 0 or deleted_notifications > 0 or deleted_mutes > 0 or deleted_tokens > 0:
              logger.info(f"Database Pruning: Deleted {deleted_games} old game results, {deleted_saves} old saved tables, {deleted_bans} expired bans, {deleted_requests} pending requests, {deleted_notifications} notifications, {deleted_expired_mutes} expired mutes, {deleted_orphaned_mutes} orphaned mutes, {deleted_tokens} expired tokens.")
         else:
@@ -469,7 +469,7 @@ class Database:
                 (username, password_hash, user_uuid, locale, trust_level, 1 if approved else 0, email, bio, now_iso, ""),
             )
         except sqlite3.IntegrityError as e:
-            logging.getLogger("playaural.db").warning(
+            logging.getLogger("PlaySonic.db").warning(
                 "IntegrityError creating user '%s': %s", username, e
             )
             return None
@@ -1788,3 +1788,4 @@ class Database:
             (game_type, limit),
         )
         return [(row["player_id"], row["player_name"] or row["player_id"], row["mu"], row["sigma"]) for row in cursor.fetchall()]
+

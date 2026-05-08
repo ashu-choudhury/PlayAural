@@ -2,7 +2,7 @@
 
 
 
-Dominos is PlayAural's classic line-building domino game. It supports 2 to 4 players, optional 2v2 teams, Double-6 and Double-9 sets, Draw and Block rules, configurable opening rules, optional four-way spinner openings, and standard leftover-pip scoring.
+Dominos is PlaySonic's classic line-building domino game. It supports 2 to 4 players, optional 2v2 teams, Double-6 and Double-9 sets, Draw and Block rules, configurable opening rules, optional four-way spinner openings, and standard leftover-pip scoring.
 
 
 
@@ -135,3 +135,4 @@ The host can adjust the following settings before the match starts:
 \* \*\*E:\*\* Read how many tiles the other players are holding.
 
 \* \*\*W:\*\* Read your hand.
+

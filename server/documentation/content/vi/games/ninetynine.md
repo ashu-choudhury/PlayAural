@@ -6,7 +6,7 @@ Chín Mươi Chín là một trò chơi bài sinh tồn và chiến thuật cổ
 
 
 
-Trò chơi này đã là một phần không thể thiếu trong cộng đồng trò chơi cho người mù nhiều năm qua. PlayAural hỗ trợ hai biến thể luật riêng biệt: biến thể tiêu chuẩn với bộ bài 52 lá và biến thể lá bài hành động với bộ bài đặc biệt 60 lá. Về cơ bản, đây là một trò chơi loại trừ: mỗi người chơi bắt đầu với một số lượng thẻ nhất định, mất thẻ khi mắc lỗi và bị loại khi hết thẻ. Người cuối cùng còn trụ lại sẽ thắng.
+Trò chơi này đã là một phần không thể thiếu trong cộng đồng trò chơi cho người mù nhiều năm qua. PlaySonic hỗ trợ hai biến thể luật riêng biệt: biến thể tiêu chuẩn với bộ bài 52 lá và biến thể lá bài hành động với bộ bài đặc biệt 60 lá. Về cơ bản, đây là một trò chơi loại trừ: mỗi người chơi bắt đầu với một số lượng thẻ nhất định, mất thẻ khi mắc lỗi và bị loại khi hết thẻ. Người cuối cùng còn trụ lại sẽ thắng.
 
 
 
@@ -103,4 +103,5 @@ Người chơi bắt đầu với một số lượng thẻ (mặc định là 9
 \* \*\*C:\*\* Kiểm tra tổng điểm hiện tại.
 
 \* \*\*Dấu cách hoặc D:\*\* Rút một lá bài (khi chế độ rút bài thủ công được bật).
+
 

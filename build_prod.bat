@@ -2,7 +2,7 @@
 setlocal
 
 echo ============================================================
-echo  PlayAural Production Build
+echo  PlaySonic Production Build
 echo ============================================================
 echo.
 
@@ -13,7 +13,7 @@ set "PYTHON_ARGS="
 set "PREFERRED_PYTHON_EXE="
 set "PREFERRED_PYTHON_ARGS="
 set "BUILD_DEPS_CHECK=import PyInstaller, wx, accessible_output2, sound_lib, keyring, requests, fluent.runtime, livekit, sounddevice"
-set "DIST_ROOT=dist\PlayAural"
+set "DIST_ROOT=dist\PlaySonic"
 set "CONTENTS_DIR="
 
 echo [0/4] Verifying build environment...
@@ -63,7 +63,7 @@ echo.
 
 echo [1/4] Cleaning previous build output...
 if exist "build" rmdir /s /q "build"
-if exist "dist\PlayAural" rmdir /s /q "dist\PlayAural"
+if exist "dist\PlaySonic" rmdir /s /q "dist\PlaySonic"
 if exist "dist\updater.exe" del /f /q "dist\updater.exe"
 echo       Previous output removed.
 echo.
@@ -85,21 +85,21 @@ if not exist "dist\updater.exe" (
 echo       updater.exe built successfully.
 echo.
 
-echo [3/4] Building PlayAural...
-"%PYTHON_EXE%" %PYTHON_ARGS% -m PyInstaller --clean --noconfirm PlayAural.spec
+echo [3/4] Building PlaySonic...
+"%PYTHON_EXE%" %PYTHON_ARGS% -m PyInstaller --clean --noconfirm PlaySonic.spec
 if errorlevel 1 (
     echo.
-    echo ERROR: PlayAural build failed. Aborting.
+    echo ERROR: PlaySonic build failed. Aborting.
     pause
     exit /b 1
 )
-if not exist "%DIST_ROOT%\PlayAural.exe" (
+if not exist "%DIST_ROOT%\PlaySonic.exe" (
     echo.
-    echo ERROR: %DIST_ROOT%\PlayAural.exe was not produced.
+    echo ERROR: %DIST_ROOT%\PlaySonic.exe was not produced.
     pause
     exit /b 1
 )
-echo       PlayAural built successfully.
+echo       PlaySonic built successfully.
 echo.
 
 echo [4/4] Finalizing release folder...
@@ -134,7 +134,7 @@ echo.
 
 echo ============================================================
 echo  Build complete.
-echo  Output: dist\PlayAural\
+echo  Output: dist\PlaySonic\
 echo ============================================================
 pause
 exit /b 0
@@ -216,3 +216,4 @@ if errorlevel 1 (
 )
 "%PYTHON_EXE%" %PYTHON_ARGS% -m pip install --upgrade pyinstaller -r requirements.txt
 exit /b %errorlevel%
+

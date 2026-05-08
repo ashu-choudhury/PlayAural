@@ -1,5 +1,5 @@
 """
-Declarative Options System for PlayAural Games.
+Declarative Options System for PlaySonic Games.
 
 This module provides a way to define game options declaratively, reducing
 boilerplate code for option handling, validation, and UI generation.
@@ -522,3 +522,4 @@ class OptionsHandlerMixin:
         """
         option_name = action_id.removeprefix("toggle_")
         self._handle_option_toggle(option_name)
+

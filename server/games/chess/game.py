@@ -1,4 +1,4 @@
-"""Chess for PlayAural."""
+"""Chess for PlaySonic."""
 
 from __future__ import annotations
 
@@ -2096,3 +2096,4 @@ class ChessGame(GridGameMixin, Game):
             )
         )
         return lines
+

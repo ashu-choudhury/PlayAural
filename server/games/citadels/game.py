@@ -1,4 +1,4 @@
-"""Citadels base-cast implementation for PlayAural."""
+"""Citadels base-cast implementation for PlaySonic."""
 
 from __future__ import annotations
 
@@ -2925,3 +2925,4 @@ class CitadelsGame(Game):
         if not cit_player:
             return None
         return citadels_bot_think(self, cit_player)
+

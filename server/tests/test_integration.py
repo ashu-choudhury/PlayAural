@@ -1,5 +1,5 @@
 """
-Integration tests for PlayAural.
+Integration tests for PlaySonic.
 
 Tests larger chunks of server code working together.
 """
@@ -431,4 +431,5 @@ class TestFullGameFlow:
 
 if __name__ == "__main__":
     pytest.main([__file__, "-v"])
+
 

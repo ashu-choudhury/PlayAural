@@ -1,18 +1,18 @@
-\*\*Quyên góp cho PlayAural\*\*
+\*\*Quyên góp cho PlaySonic\*\*
 
-PlayAural sẽ luôn hoàn toàn miễn phí. Nếu bạn yêu thích dự án và muốn hỗ trợ chi phí phát triển, máy chủ, bảo trì, hoặc đơn giản là muốn thể hiện tình cảm của mình với trò chơi, bạn có thể xem thông tin quyên góp tại đây.
+PlaySonic sẽ luôn hoàn toàn miễn phí. Nếu bạn yêu thích dự án và muốn hỗ trợ chi phí phát triển, máy chủ, bảo trì, hoặc đơn giản là muốn thể hiện tình cảm của mình với trò chơi, bạn có thể xem thông tin quyên góp tại đây.
 
 \*\*Một lời nhắn nhỏ\*\*
 
 \* Chỉ nên quyên góp khi điều đó thật sự phù hợp với khả năng tài chính của bạn.
-\* Bạn không bao giờ cần phải quyên góp để được chơi PlayAural.
-\* Sự yêu mến, tin tưởng và đồng hành của người chơi chính là món quà lớn nhất dành cho PlayAural.
+\* Bạn không bao giờ cần phải quyên góp để được chơi PlaySonic.
+\* Sự yêu mến, tin tưởng và đồng hành của người chơi chính là món quà lớn nhất dành cho PlaySonic.
 
 \*\*Sự hỗ trợ này giúp được gì\*\*
 
 \* Chi phí máy chủ và hạ tầng để duy trì dịch vụ.
 \* Thời gian phát triển, kiểm thử, cải thiện khả năng tiếp cận và bảo trì lâu dài.
-\* Giữ cho PlayAural ổn định, thân thiện và miễn phí cho mọi người.
+\* Giữ cho PlaySonic ổn định, thân thiện và miễn phí cho mọi người.
 
 \*\*Thông tin quyên góp\*\*
 
@@ -37,4 +37,5 @@ Nếu bạn muốn quyên góp nhưng các phương thức hiện tại chưa ph
 
 \*\*Xin cảm ơn\*\*
 
-Xin cảm ơn vì đã chơi, góp ý, rủ bạn bè tham gia và đồng hành cùng PlayAural. Dù bạn có quyên góp hay không, sự quan tâm và tình cảm của bạn vẫn luôn rất quý giá.
+Xin cảm ơn vì đã chơi, góp ý, rủ bạn bè tham gia và đồng hành cùng PlaySonic. Dù bạn có quyên góp hay không, sự quan tâm và tình cảm của bạn vẫn luôn rất quý giá.
+

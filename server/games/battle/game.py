@@ -1,4 +1,4 @@
-"""Battle game implementation for PlayAural."""
+"""Battle game implementation for PlaySonic."""
 
 from dataclasses import dataclass, field
 from datetime import datetime
@@ -1928,3 +1928,4 @@ class BattleGame(Game):
         if team_id:
             self.play_sound(SOUND_BATTLE_WIN)
         self.finish_game()
+

@@ -1,5 +1,5 @@
 """
-LastCard — An Uno-style card game for PlayAural.
+LastCard — An Uno-style card game for PlaySonic.
 
 Players take turns matching the top card by color or number.
 Special cards (Skip, Reverse, Draw Two, Wild, Wild Draw Four) add strategic depth.
@@ -2541,3 +2541,4 @@ class LastCardGame(Game, TurnTimerMixin):
 
     def _handle_event(self, event_type: str, data: dict) -> None:
         pass  # Reserved for future deferred events
+

@@ -36,11 +36,12 @@ tossup-enter-starting-dice = Nhập số lượng xúc xắc ban đầu:
 tossup-option-changed-dice = Số xúc xắc ban đầu đã đổi thành { $count }
 
 tossup-rules-standard = Tiêu chuẩn
-tossup-rules-PlayAural = PlayAural
+tossup-rules-PlaySonic = PlaySonic
 
 tossup-rules-standard-desc = 3 xanh, 2 vàng, 1 đỏ mỗi viên. Mất trắng nếu không có màu xanh và có ít nhất một màu đỏ.
-tossup-rules-PlayAural-desc = Phân bố đều. Mất trắng nếu tất cả xúc xắc đều là màu đỏ.
+tossup-rules-PlaySonic-desc = Phân bố đều. Mất trắng nếu tất cả xúc xắc đều là màu đỏ.
 
 tossup-need-points = Bạn cần có điểm mới chốt được.
 
 tossup-line-format = { $rank }. { $player }: { $points }
+

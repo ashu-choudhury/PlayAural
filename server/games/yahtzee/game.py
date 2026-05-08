@@ -1,5 +1,5 @@
 """
-Yahtzee Game Implementation for PlayAural.
+Yahtzee Game Implementation for PlaySonic.
 
 Classic dice game: roll 5 dice up to 3 times per turn, then score in one of 13 categories.
 Fill all categories to complete the game. Highest total score wins.
@@ -912,3 +912,4 @@ for _cat in ALL_CATEGORIES:
     setattr(YahtzeeGame, f"_is_score_{_cat}_enabled", _make_score_enabled(_cat))
     setattr(YahtzeeGame, f"_is_score_{_cat}_hidden", _make_score_hidden(_cat))
     setattr(YahtzeeGame, f"_get_score_{_cat}_label", _make_score_label(_cat))
+

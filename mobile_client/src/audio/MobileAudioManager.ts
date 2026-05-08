@@ -40,7 +40,7 @@ type DesiredAmbienceRequest = {
 
 type AmbiencePhase = "idle" | "intro" | "loop" | "outro";
 
-const DEBUG_PREFIX = "PLAYAURAL_DEBUG Audio";
+const DEBUG_PREFIX = "PlaySonic_DEBUG Audio";
 
 type AndroidNativeAudioMode = {
   interruptionModeAndroid: number;
@@ -1315,3 +1315,4 @@ export class MobileAudioManager {
     console.info(DEBUG_PREFIX, event, value || "");
   }
 }
+

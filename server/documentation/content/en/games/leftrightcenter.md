@@ -18,7 +18,7 @@ The last player with any chips wins.
 
 
 
-PlayAural Left Right Center supports 2 to 20 players. At the start of the game, each player receives a configurable number of chips (default 3, range 1 to 10). Turn order then proceeds normally around the table.
+PlaySonic Left Right Center supports 2 to 20 players. At the start of the game, each player receives a configurable number of chips (default 3, range 1 to 10). Turn order then proceeds normally around the table.
 
 
 
@@ -79,4 +79,5 @@ The game ends immediately when only one active player still has chips. That play
 \* \*\*R:\*\* Roll dice.
 
 \* \*\*C:\*\* Read the current center pot.
+
 

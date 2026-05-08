@@ -1,6 +1,6 @@
-\*\*Welcome to PlayAural\*\*
+\*\*Welcome to PlaySonic\*\*
 
-PlayAural is an online gaming platform designed around sound, speech, and accessible controls. Menus, game events, chat, status updates, and supported voice features are presented in a way that can be followed without relying on visual information.
+PlaySonic is an online gaming platform designed around sound, speech, and accessible controls. Menus, game events, chat, status updates, and supported voice features are presented in a way that can be followed without relying on visual information.
 
 \*\*Where You Can Play\*\*
 
@@ -25,11 +25,11 @@ When you enter a table, you can usually:
 \* Check Game Info to hear the current table settings.
 \* Use Who's at the table to hear who is present.
 \* Chat with other people at the table or send private messages.
-\* Join the table's voice chat on the PlayAural clients that support voice playback and microphone access.
+\* Join the table's voice chat on the PlaySonic clients that support voice playback and microphone access.
 
 \*\*Chat and Social Features\*\*
 
-PlayAural is built to be social as well as accessible.
+PlaySonic is built to be social as well as accessible.
 
 \* \*\*Friends:\*\* Keep track of the people you enjoy playing with.
 \* \*\*Private messages:\*\* Send direct messages without leaving your current table.
@@ -42,4 +42,5 @@ If you are completely new, read Global Controls next. That guide explains the de
 
 \*\*Community\*\*
 
-PlayAural aims to be a friendly place for new and experienced players alike. Before your first serious session, take a moment to read the Community Rules so you know what is expected at the table and in chat.
+PlaySonic aims to be a friendly place for new and experienced players alike. Before your first serious session, take a moment to read the Community Rules so you know what is expected at the table and in chat.
+

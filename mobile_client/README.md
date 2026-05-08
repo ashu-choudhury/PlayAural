@@ -1,8 +1,8 @@
-# PlayAural Mobile Client
+# PlaySonic Mobile Client
 
-The PlayAural mobile client is an Android-first Expo and React Native application for the PlayAural multiplayer game platform. It uses the same WebSocket protocol and sound directory layout as the other clients while providing self-voicing navigation, gesture-driven gameplay, and accessible text entry for mobile devices.
+The PlaySonic mobile client is an Android-first Expo and React Native application for the PlaySonic multiplayer game platform. It uses the same WebSocket protocol and sound directory layout as the other clients while providing self-voicing navigation, gesture-driven gameplay, and accessible text entry for mobile devices.
 
-The mobile client is part of PlayAural and is licensed under the **GNU GENERAL PUBLIC LICENSE**.
+The mobile client is part of PlaySonic and is licensed under the **GNU GENERAL PUBLIC LICENSE**.
 
 ## Current Scope
 
@@ -108,10 +108,10 @@ Voice chat UI state and server packet flow can be tested in the web runtime, but
 
 ## Server Connection
 
-The default production server URL is stored in `src/app/PlayAuralApp.tsx` as `DEFAULT_SERVER_URL`:
+The default production server URL is stored in `src/app/PlaySonicApp.tsx` as `DEFAULT_SERVER_URL`:
 
 ```text
-wss://playaural.ddt.one:443
+wss://PlaySonic.ddt.one:443
 ```
 
 For local server testing, change that constant to a local WebSocket URL such as:
@@ -140,8 +140,8 @@ The phone and development computer must be on the same network, and the firewall
 
 Mobile version and build identifiers are stored in:
 
-- `src/app/PlayAuralApp.tsx`: `MOBILE_CLIENT_VERSION`
-- `src/app/PlayAuralApp.tsx`: `MOBILE_BUILD_STAMP`
+- `src/app/PlaySonicApp.tsx`: `MOBILE_CLIENT_VERSION`
+- `src/app/PlaySonicApp.tsx`: `MOBILE_BUILD_STAMP`
 - `app.json`: `expo.version`
 - `package.json`: package version
 - `package-lock.json`: locked root package version
@@ -164,7 +164,7 @@ cmd /c npm run generate:sounds
 
 ## Local Android Builds
 
-PlayAural can be built locally on Windows without using Expo cloud builds. This is useful for fast device testing, gesture debugging, voice-chat verification, and release candidate validation before distribution.
+PlaySonic can be built locally on Windows without using Expo cloud builds. This is useful for fast device testing, gesture debugging, voice-chat verification, and release candidate validation before distribution.
 
 ### Local Build Requirements
 
@@ -274,4 +274,5 @@ The repository tracks source files, configuration files, locale files, and the g
 
 ## License
 
-PlayAural is licensed under the **GNU GENERAL PUBLIC LICENSE**. See `../LICENSE` for the full license text.
+PlaySonic is licensed under the **GNU GENERAL PUBLIC LICENSE**. See `../LICENSE` for the full license text.
+

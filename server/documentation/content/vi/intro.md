@@ -1,6 +1,6 @@
-\*\*Chào mừng đến với PlayAural\*\*
+\*\*Chào mừng đến với PlaySonic\*\*
 
-PlayAural là nền tảng trò chơi trực tuyến được xây dựng xoay quanh âm thanh, lời đọc và cách điều khiển dễ tiếp cận. Menu, diễn biến trong trò chơi, phần trò chuyện, thông báo trạng thái và các tính năng thoại được hỗ trợ đều được trình bày theo cách mà bạn có thể theo dõi mà không cần phụ thuộc vào hình ảnh trên màn hình.
+PlaySonic là nền tảng trò chơi trực tuyến được xây dựng xoay quanh âm thanh, lời đọc và cách điều khiển dễ tiếp cận. Menu, diễn biến trong trò chơi, phần trò chuyện, thông báo trạng thái và các tính năng thoại được hỗ trợ đều được trình bày theo cách mà bạn có thể theo dõi mà không cần phụ thuộc vào hình ảnh trên màn hình.
 
 \*\*Bạn có thể chơi bằng cách nào\*\*
 
@@ -29,7 +29,7 @@ Khi đã vào bàn, thông thường bạn có thể:
 
 \*\*Trò chuyện và các tính năng giao tiếp\*\*
 
-PlayAural không chỉ chú trọng khả năng tiếp cận mà còn chú trọng việc kết nối giữa người chơi.
+PlaySonic không chỉ chú trọng khả năng tiếp cận mà còn chú trọng việc kết nối giữa người chơi.
 
 \* \*\*Bạn bè:\*\* Theo dõi những người bạn thích chơi cùng.
 \* \*\*Tin nhắn riêng:\*\* Gửi tin nhắn trực tiếp mà không cần rời khỏi bàn đang ngồi.
@@ -42,4 +42,5 @@ Nếu bạn là người mới hoàn toàn, hãy đọc tiếp phần Điều kh
 
 \*\*Cộng đồng\*\*
 
-PlayAural hướng tới một môi trường thân thiện cho cả người mới lẫn người chơi lâu năm. Trước phiên chơi nghiêm túc đầu tiên, hãy dành một chút thời gian đọc Nội quy cộng đồng để biết những quy tắc cơ bản khi chơi và khi trò chuyện.
+PlaySonic hướng tới một môi trường thân thiện cho cả người mới lẫn người chơi lâu năm. Trước phiên chơi nghiêm túc đầu tiên, hãy dành một chút thời gian đọc Nội quy cộng đồng để biết những quy tắc cơ bản khi chơi và khi trò chuyện.
+

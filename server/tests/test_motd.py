@@ -5,7 +5,7 @@ from server.persistence.database import Database
 
 @pytest.fixture
 def db(tmp_path: Path) -> Database:
-    db_path = tmp_path / "test_playaural.db"
+    db_path = tmp_path / "test_PlaySonic.db"
     database = Database(db_path)
     database.connect()
 
@@ -68,3 +68,4 @@ def test_motd_deletion(db: Database):
     db.delete_motd()
     assert db.get_highest_motd_version() == 0
     assert db.get_active_motd("en") is None
+

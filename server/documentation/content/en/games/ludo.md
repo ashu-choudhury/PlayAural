@@ -2,7 +2,7 @@
 
 
 
-Ludo is PlayAural's race game based on the familiar four-color cross-and-circle format. Each player controls four tokens, brings them out from the yard, moves them around the shared outer track, then guides them into a private home lane. The first player to finish all four tokens wins the game immediately.
+Ludo is PlaySonic's race game based on the familiar four-color cross-and-circle format. Each player controls four tokens, brings them out from the yard, moves them around the shared outer track, then guides them into a private home lane. The first player to finish all four tokens wins the game immediately.
 
 
 
@@ -98,7 +98,7 @@ If the limit is reached, the penalty is severe: all moves made during that turn 
 
 
 
-Ludo in PlayAural uses straightforward race scoring:
+Ludo in PlaySonic uses straightforward race scoring:
 
 
 
@@ -137,3 +137,4 @@ The host can adjust the following options before the game starts:
 \* \*\*T:\*\* Check whose turn it is.
 
 \* \*\*S:\*\* Check the current score display.
+

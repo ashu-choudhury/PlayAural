@@ -1,4 +1,4 @@
-"""Main window for PlayAural client."""
+"""Main window for PlaySonic client."""
 
 import wx
 from .menu_list import MenuList
@@ -31,7 +31,7 @@ MENU_MIN_WIDTH = 280
 
 
 class MainWindow(wx.Frame):
-    """Main application window for PlayAural v9 client."""
+    """Main application window for PlaySonic v9 client."""
 
     def __init__(self, credentials=None):
         """
@@ -1638,7 +1638,7 @@ class MainWindow(wx.Frame):
         """Auto-connect to server using login credentials."""
         username = self.credentials.get("username", "Guest")
         password = self.credentials.get("password", "")
-        server_url = self.credentials.get("server_url", "wss://playaural.ddt.one")
+        server_url = self.credentials.get("server_url", "wss://PlaySonic.ddt.one")
 
         # Play connection loop sound
         self.sound_manager.music("connectloop.ogg")
@@ -2113,7 +2113,7 @@ class MainWindow(wx.Frame):
         url = update_info.get("url")
         # Use temp directory for download to avoid permission issues
         temp_dir = tempfile.gettempdir()
-        target_zip = os.path.join(temp_dir, f"playaural_update_{int(time.time())}.zip")
+        target_zip = os.path.join(temp_dir, f"PlaySonic_update_{int(time.time())}.zip")
         self.download_cancelled = False
         
         try:
@@ -2240,8 +2240,8 @@ class MainWindow(wx.Frame):
             if os.path.exists(updater_script):
                 # Running from source, call python
                 python_exe = sys.executable
-                exe_name = os.path.basename(sys.executable) if getattr(sys, 'frozen', False) else "PlayAural.exe"
-                cmd = [python_exe, updater_script, "--zip", zip_path, "--target", os.getcwd(), "--exe", "PlayAural.exe", "--pid", str(pid)]
+                exe_name = os.path.basename(sys.executable) if getattr(sys, 'frozen', False) else "PlaySonic.exe"
+                cmd = [python_exe, updater_script, "--zip", zip_path, "--target", os.getcwd(), "--exe", "PlaySonic.exe", "--pid", str(pid)]
                 if extract_dir:
                     cmd.extend(["--extract-dir", extract_dir])
                 subprocess.Popen(cmd)
@@ -2262,7 +2262,7 @@ class MainWindow(wx.Frame):
                     
                     temp_dir = tempfile.gettempdir()
                     # Use unique name to avoid conflicts or permission issues on temp
-                    temp_updater = os.path.join(temp_dir, f"playaural_updater_{pid}.exe")
+                    temp_updater = os.path.join(temp_dir, f"PlaySonic_updater_{pid}.exe")
                     
                     try:
                          shutil.copy2(updater_exe, temp_updater)
@@ -2337,7 +2337,7 @@ class MainWindow(wx.Frame):
         import tempfile
 
         temp_dir = tempfile.gettempdir()
-        target_zip = os.path.join(temp_dir, f"playaural_sounds_{int(time.time())}.zip")
+        target_zip = os.path.join(temp_dir, f"PlaySonic_sounds_{int(time.time())}.zip")
         self.sounds_download_cancelled = False
 
         try:
@@ -2966,16 +2966,16 @@ class MainWindow(wx.Frame):
 
     def _load_preferences(self):
         """
-        Load preferences from AppData/Roaming/ddt.one/PlayAural/preferences.json
+        Load preferences from AppData/Roaming/ddt.one/PlaySonic/preferences.json
 
         Returns:
             Dict containing preferences, or empty dict if file doesn't exist
         """
         appdata = os.getenv("APPDATA")
         if appdata:
-             config_dir = Path(appdata) / "ddt.one" / "PlayAural"
+             config_dir = Path(appdata) / "ddt.one" / "PlaySonic"
         else:
-             config_dir = Path.home() / "ddt.one" / "PlayAural"
+             config_dir = Path.home() / "ddt.one" / "PlaySonic"
         
         preferences_file = config_dir / "preferences.json"
 
@@ -2992,9 +2992,9 @@ class MainWindow(wx.Frame):
         """Save muted buffers to preferences file."""
         appdata = os.getenv("APPDATA")
         if appdata:
-             config_dir = Path(appdata) / "ddt.one" / "PlayAural"
+             config_dir = Path(appdata) / "ddt.one" / "PlaySonic"
         else:
-             config_dir = Path.home() / "ddt.one" / "PlayAural"
+             config_dir = Path.home() / "ddt.one" / "PlaySonic"
              
         preferences_file = config_dir / "preferences.json"
 
@@ -3035,3 +3035,4 @@ class MainWindow(wx.Frame):
         self.sound_manager.stop_music(fade=False)
         self.sound_manager.stop_ambience(force=True)
         self.Close()
+

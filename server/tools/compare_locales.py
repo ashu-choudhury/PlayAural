@@ -1,5 +1,5 @@
 """
-Translation Comparison Tool for PlayAural.
+Translation Comparison Tool for PlaySonic.
 
 Compares English (.ftl) source files with a target locale to identify missing files
 and missing translation keys.
@@ -37,7 +37,7 @@ def get_message_keys(file_path: Path) -> set[str]:
     return keys
 
 def main():
-    print(f"PlayAural Translation Comparison Tool")
+    print(f"PlaySonic Translation Comparison Tool")
     print(f"Source Directory: {ENGLISH_DIR}")
     
     if not ENGLISH_DIR.exists():
@@ -105,3 +105,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+

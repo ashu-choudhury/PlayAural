@@ -1,6 +1,7 @@
-import { PlayAuralApp } from "./src/app/PlayAuralApp";
+import { PlaySonicApp } from "./src/app/PlaySonicApp";
 
 
 export default function App() {
-  return <PlayAuralApp />;
+  return <PlaySonicApp />;
 }
+

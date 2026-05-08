@@ -41,11 +41,11 @@ from ..game_utils.game_result import GameResult
 
 VERSION = "1.0.4.4"
 LATEST_CLIENT_VERSION = "1.0.4.4"
-UPDATE_URL = "https://github.com/Daoductrung/PlayAural/releases/latest/download/PlayAural.zip"
+UPDATE_URL = "https://github.com/Daoductrung/PlaySonic/releases/latest/download/PlaySonic.zip"
 UPDATE_HASH = "" # Optional SHA256
 
 SOUNDS_VERSION = "2"
-SOUNDS_URL = "https://github.com/Daoductrung/PlayAural/releases/latest/download/sounds.zip"
+SOUNDS_URL = "https://github.com/Daoductrung/PlaySonic/releases/latest/download/sounds.zip"
 TABLE_CREATED_NOTIFICATION_SOUND = "table_created.ogg"
 TABLE_INVITE_NOTIFICATION_SOUND = "table_invite.ogg"
 VOICE_CHAT_JOIN_SOUND = "voice_join.ogg"
@@ -83,7 +83,7 @@ _DEFAULT_LOCALES_DIR = _MODULE_DIR / "locales"
 
 class Server:
     """
-    Main PlayAural server.
+    Main PlaySonic server.
 
     Coordinates all components: network, auth, tables, games, and persistence.
     """
@@ -133,7 +133,7 @@ class Server:
         self,
         host: str = "0.0.0.0",
         port: int = 8000,
-        db_path: str = "PlayAural.db",
+        db_path: str = "PlaySonic.db",
         locales_dir: str | Path | None = None,
         ssl_cert: str | Path | None = None,
         ssl_key: str | Path | None = None,
@@ -195,9 +195,9 @@ class Server:
 
     async def start(self) -> None:
         """
-PlayAural Server
+PlaySonic Server
 """
-        print(f"Starting PlayAural v{VERSION} server...")
+        print(f"Starting PlaySonic v{VERSION} server...")
 
         # Connect to database
         self._db.connect()
@@ -1255,7 +1255,7 @@ PlayAural Server
                 "text": Localization.get(locale, "auth-username-taken")
             })
         else:
-            logging.getLogger("playaural").error(
+            logging.getLogger("PlaySonic").error(
                 "Registration DB error for user '%s': %s", username, reg_result
             )
             await client.send({
@@ -1300,7 +1300,7 @@ PlayAural Server
         # main menu — that desynchronises table membership from _user_states
         # and causes ghost duplicates.  Log loudly so regressions are caught.
         if self._tables.find_user_table(user.username):
-            logging.getLogger("playaural").warning(
+            logging.getLogger("PlaySonic").warning(
                 "_show_main_menu called while %s is still in a table — "
                 "possible routing bug (state desync / ghost risk)",
                 user.username,
@@ -3849,7 +3849,7 @@ PlayAural Server
         Better approach for accessibility:
         Present as a menu where:
         - Each Header is a menu item (e.g. "H1: Welcome")
-        - Each Paragraph is a menu item (e.g. "PlayAural is...")
+        - Each Paragraph is a menu item (e.g. "PlaySonic is...")
         User can browse line by line.
         """
         manager = DocumentationManager.get_instance()
@@ -4161,7 +4161,7 @@ PlayAural Server
                     "locale": lang_code
                 })
             except Exception as e:
-                logging.getLogger("playaural").exception("Error changing language")
+                logging.getLogger("PlaySonic").exception("Error changing language")
                 user.speak_l("server-error-changing-language", buffer="system", error=str(e))
             
             self._nav_back(user)
@@ -7358,7 +7358,7 @@ async def run_server(
     def _log_uncaught(exc_type, exc, tb):
         if exc_type in (KeyboardInterrupt, asyncio.CancelledError):
             return
-        logging.getLogger("playaural").exception(
+        logging.getLogger("PlaySonic").exception(
             "Uncaught exception", exc_info=(exc_type, exc, tb)
         )
 
@@ -7370,11 +7370,11 @@ async def run_server(
         if isinstance(exc, asyncio.CancelledError):
             return
         if exc:
-            logging.getLogger("playaural").exception(
+            logging.getLogger("PlaySonic").exception(
                 "Asyncio exception", exc_info=exc
             )
         else:
-            logging.getLogger("playaural").error(
+            logging.getLogger("PlaySonic").error(
                 "Asyncio error: %s", context.get("message")
             )
 
@@ -7391,3 +7391,4 @@ async def run_server(
         pass
     finally:
         await server.stop()
+

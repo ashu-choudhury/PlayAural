@@ -89,7 +89,7 @@ class BunkoOptions(GameOptions):
 @dataclass
 @register_game
 class BunkoGame(Game):
-    """Single-table Bunko adaptation for PlayAural."""
+    """Single-table Bunko adaptation for PlaySonic."""
 
     players: list[BunkoPlayer] = field(default_factory=list)
     options: BunkoOptions = field(default_factory=BunkoOptions)
@@ -715,3 +715,4 @@ class BunkoGame(Game):
                 )
             )
         return lines
+

@@ -10,7 +10,7 @@ from ssl_utils import make_ssl_context
 
 
 class NetworkManager:
-    """Manages WebSocket connection to PlayAural server."""
+    """Manages WebSocket connection to PlaySonic server."""
 
     def __init__(self, main_window):
         """
@@ -37,7 +37,7 @@ class NetworkManager:
         Connect to server.
         
         Args:
-            server_url: WebSocket URL (e.g., "wss://playaural.ddt.one")
+            server_url: WebSocket URL (e.g., "wss://PlaySonic.ddt.one")
             username: Username for authorization
             password: Password for authorization
             client_version: Version string of the client
@@ -264,3 +264,4 @@ class NetworkManager:
             self.main_window.on_voice_context_closed(packet)
         elif packet_type == "table_context":
             self.main_window.on_table_context(packet)
+

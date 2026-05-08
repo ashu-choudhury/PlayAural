@@ -532,9 +532,9 @@ def open_auth_database():
 
 def cmd_create_user(args):
     """Create a new user."""
-    password = os.environ.get("PLAYAURAL_CLI_PW")
+    password = os.environ.get("PlaySonic_CLI_PW")
     if not password:
-        print("Error: Password must be provided via PLAYAURAL_CLI_PW environment variable.")
+        print("Error: Password must be provided via PlaySonic_CLI_PW environment variable.")
         sys.exit(1)
 
     if HAS_SERVER_PACKAGE:
@@ -561,9 +561,9 @@ def cmd_create_user(args):
 
 def cmd_reset_password(args):
     """Reset a user's password."""
-    password = os.environ.get("PLAYAURAL_CLI_PW")
+    password = os.environ.get("PlaySonic_CLI_PW")
     if not password:
-        print("Error: Password must be provided via PLAYAURAL_CLI_PW environment variable.")
+        print("Error: Password must be provided via PlaySonic_CLI_PW environment variable.")
         sys.exit(1)
 
     if HAS_SERVER_PACKAGE:
@@ -583,7 +583,7 @@ def cmd_reset_password(args):
 
 def main():
     parser = argparse.ArgumentParser(
-        description="PlayAural CLI for AI agents",
+        description="PlaySonic CLI for AI agents",
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog=__doc__,
     )
@@ -661,3 +661,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+

@@ -1,4 +1,4 @@
-"""Backgammon for PlayAural."""
+"""Backgammon for PlaySonic."""
 
 from __future__ import annotations
 
@@ -1507,3 +1507,4 @@ class BackgammonGame(Game):
         current = self.current_player
         if current and current.is_bot:
             BotHelper.jolt_bot(current, ticks=random.randint(8, 16))  # nosec B311
+

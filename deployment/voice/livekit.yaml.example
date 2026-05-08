@@ -16,4 +16,5 @@ turn:
   udp_port: 443
 
 keys:
-  PLAYAURAL_VOICE_API_KEY: PLAYAURAL_VOICE_API_SECRET
+  PlaySonic_VOICE_API_KEY: PlaySonic_VOICE_API_SECRET
+

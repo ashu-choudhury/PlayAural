@@ -1,4 +1,4 @@
-"""Classic Draw / Block Dominos for PlayAural."""
+"""Classic Draw / Block Dominos for PlaySonic."""
 
 from __future__ import annotations
 
@@ -1321,3 +1321,4 @@ class DominosGame(Game):
                 )
             )
         return lines
+

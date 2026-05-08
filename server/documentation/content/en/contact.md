@@ -1,6 +1,6 @@
 \*\*Contact\*\*
 
-Use this page when you need to contact the PlayAural maintainer directly. You can use these contact methods for project questions, accessibility feedback, bug reports, community issues, donation questions, or other PlayAural-related matters.
+Use this page when you need to contact the PlaySonic maintainer directly. You can use these contact methods for project questions, accessibility feedback, bug reports, community issues, donation questions, or other PlaySonic-related matters.
 
 \*\*Before You Contact\*\*
 
@@ -19,7 +19,7 @@ Use this page when you need to contact the PlayAural maintainer directly. You ca
 
 For the fastest and clearest response, include the relevant details in your message:
 
-\* Your PlayAural username, if the question is about your account.
+\* Your PlaySonic username, if the question is about your account.
 \* The game or feature involved.
 \* The client you were using: desktop, web, or mobile.
 \* A short description of the issue or request.
@@ -36,3 +36,4 @@ If you need to report harassment, spam, cheating, privacy concerns, or another c
 \*\*Response Time\*\*
 
 Messages are answered when time allows. Some issues may take longer to review, especially account, moderation, server, or technical bug reports.
+

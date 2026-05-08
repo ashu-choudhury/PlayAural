@@ -1,6 +1,6 @@
 \*\*Điều khiển toàn cục\*\*
 
-Tài liệu này giải thích các cách điều khiển dùng chung trong PlayAural. Người chơi trên máy tính chủ yếu dùng phím tắt. Người chơi trên thiết bị di động chủ yếu dùng cử chỉ có sẵn trong ứng dụng. Hai cách này đều giúp bạn đi tới cùng một nhóm tính năng.
+Tài liệu này giải thích các cách điều khiển dùng chung trong PlaySonic. Người chơi trên máy tính chủ yếu dùng phím tắt. Người chơi trên thiết bị di động chủ yếu dùng cử chỉ có sẵn trong ứng dụng. Hai cách này đều giúp bạn đi tới cùng một nhóm tính năng.
 
 \*\*Phím tắt trên máy tính\*\*
 
@@ -28,7 +28,7 @@ Tài liệu này giải thích các cách điều khiển dùng chung trong Play
 
 \*\*Các bộ đệm tin nhắn\*\*
 
-PlayAural chia tin nhắn thành nhiều bộ đệm để bạn dễ xem riêng tin của trò chơi, phần trò chuyện và các loại thông báo khác.
+PlaySonic chia tin nhắn thành nhiều bộ đệm để bạn dễ xem riêng tin của trò chơi, phần trò chuyện và các loại thông báo khác.
 
 \* \*\*`[` / `]`:\*\* Chuyển sang bộ đệm trước hoặc bộ đệm kế tiếp.
 \* \*\*Shift + `[` / Shift + `]`:\*\* Nhảy tới bộ đệm đầu tiên hoặc cuối cùng.
@@ -70,3 +70,4 @@ Phần Phím tắt giúp người dùng di động mở nhanh các tính năng q
 \* \*\*Bạn bè:\*\* Mở danh sách bạn bè và các tính năng giao tiếp.
 \* \*\*Kiểm tra độ trễ:\*\* Kiểm tra độ trễ kết nối tới máy chủ.
 \* \*\*Người dùng đang trực tuyến:\*\* Mở danh sách người hiện đang có mặt trên máy chủ.
+

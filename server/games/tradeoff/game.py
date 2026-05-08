@@ -1,5 +1,5 @@
 """
-Tradeoff Game Implementation for PlayAural.
+Tradeoff Game Implementation for PlaySonic.
 
 A dice trading game where players roll dice, trade unwanted ones to a shared pool,
 and take dice back in turn order (lowest scorer first). After 3 iterations,
@@ -532,7 +532,7 @@ class TradeoffGame(Game):
         """
         Handle a dice key press (1-6).
 
-        PlayAural style: toggle die at index (key_num - 1), keys 1-5.
+        PlaySonic style: toggle die at index (key_num - 1), keys 1-5.
         Value-based style: keep (unmark) first trading die with that face value.
         """
         user = self.get_user(player)
@@ -1149,3 +1149,4 @@ for _v in range(1, 7):
     setattr(TradeoffGame, f"_is_take_{_v}_enabled", _make_take_enabled(_v))
     setattr(TradeoffGame, f"_is_take_{_v}_hidden", _make_take_hidden(_v))
     setattr(TradeoffGame, f"_get_take_{_v}_label", _make_take_label(_v))
+

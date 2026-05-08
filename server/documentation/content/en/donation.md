@@ -1,18 +1,18 @@
-\*\*Support PlayAural\*\*
+\*\*Support PlaySonic\*\*
 
-PlayAural will remain completely free to play. If you enjoy the project and would like to help with development costs, servers, maintenance, or simply want to show your love for the game, you may support it here.
+PlaySonic will remain completely free to play. If you enjoy the project and would like to help with development costs, servers, maintenance, or simply want to show your love for the game, you may support it here.
 
 \*\*A Gentle Note\*\*
 
 \* Please only donate if it is comfortable for your own budget.
 \* There is never any obligation to donate in order to play.
-\* The greatest donation is the affection, trust, and support that players give to PlayAural by being part of the community.
+\* The greatest donation is the affection, trust, and support that players give to PlaySonic by being part of the community.
 
 \*\*What Your Support Helps With\*\*
 
 \* Server hosting and ongoing infrastructure costs.
 \* Development time, testing, accessibility improvements, and maintenance.
-\* Keeping PlayAural stable, welcoming, and free for everyone.
+\* Keeping PlaySonic stable, welcoming, and free for everyone.
 
 \*\*How to Donate\*\*
 
@@ -33,4 +33,5 @@ If you want to donate but the current payment methods do not work for you, or if
 
 \*\*Thank You\*\*
 
-Thank you for playing, sharing feedback, inviting friends, and helping PlayAural grow. Whether you donate or not, your kindness and enthusiasm mean a great deal.
+Thank you for playing, sharing feedback, inviting friends, and helping PlaySonic grow. Whether you donate or not, your kindness and enthusiasm mean a great deal.
+

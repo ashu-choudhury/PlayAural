@@ -7,24 +7,24 @@ auth-error-user-not-found = Người dùng không tồn tại.
 auth-kicked-logged-in-elsewhere = Bạn đã bị ngắt kết nối vì tài khoản của bạn vừa được đăng nhập từ một thiết bị khác.
 
 chat-global = { $player } nói chung: { $message }
-dev-announcement-broadcast = { $dev } là nhà phát triển của PlayAural.
-admin-announcement-broadcast = { $admin } là quản trị viên của PlayAural.
+dev-announcement-broadcast = { $dev } là nhà phát triển của PlaySonic.
+admin-announcement-broadcast = { $admin } là quản trị viên của PlaySonic.
 
 admin-smtp-updated-success = Đã cập nhật thiết lập SMTP thành công
 admin-smtp-settings = Cài đặt SMTP
-email-reset-subject = Mã khôi phục mật khẩu PlayAural
-email-reset-body = Chào { $username },\n\nBạn đã yêu cầu khôi phục mật khẩu cho tài khoản PlayAural của mình.\nMã khôi phục 6 số của bạn là: { $code }\n\nMã này sẽ hết hạn sau 15 phút.\nNếu bạn không yêu cầu điều này, vui lòng bỏ qua email này.
+email-reset-subject = Mã khôi phục mật khẩu PlaySonic
+email-reset-body = Chào { $username },\n\nBạn đã yêu cầu khôi phục mật khẩu cho tài khoản PlaySonic của mình.\nMã khôi phục 6 số của bạn là: { $code }\n\nMã này sẽ hết hạn sau 15 phút.\nNếu bạn không yêu cầu điều này, vui lòng bỏ qua email này.
 email-reset-body-html = <p>Chào { $username },</p>
-    <p>Chúng tôi nhận được yêu cầu khôi phục mật khẩu cho tài khoản PlayAural của bạn.</p>
+    <p>Chúng tôi nhận được yêu cầu khôi phục mật khẩu cho tài khoản PlaySonic của bạn.</p>
     <p>Mã khôi phục 6 số của bạn là:</p>
     <h2>{ $code }</h2>
     <p>Mã này sẽ hết hạn sau đúng 15 phút.</p>
     <p>Nếu bạn không yêu cầu điều này, vui lòng bỏ qua email này. Tài khoản của bạn vẫn an toàn.</p>
     <p>Trân trọng,<br>Trung</p>
-email-test-subject = Bài kiểm tra SMTP PlayAural
-email-test-body = Đây là email kiểm tra từ máy chủ PlayAural xác minh cấu hình SMTP của bạn.
+email-test-subject = Bài kiểm tra SMTP PlaySonic
+email-test-body = Đây là email kiểm tra từ máy chủ PlaySonic xác minh cấu hình SMTP của bạn.
 email-test-body-html = <p>Xin chào,</p>
-    <p>Đây là email kiểm tra từ máy chủ PlayAural.</p>
+    <p>Đây là email kiểm tra từ máy chủ PlaySonic.</p>
     <p>Nếu bạn đang đọc được dòng này, điều đó có nghĩa cấu hình SMTP của bạn đã gửi email HTML thành công.</p>
 smtp-test-sending = Đang kiểm tra kết nối, vui lòng chờ...
 smtp-test-success = Gửi email kiểm tra thành công đến { $email }!
@@ -43,7 +43,7 @@ smtp-prompt-port = Nhập Cổng SMTP (ví dụ: 587 hoặc 465):
 smtp-prompt-username = Nhập Tên đăng nhập SMTP:
 smtp-prompt-password = Nhập Mật khẩu SMTP:
 smtp-prompt-from-email = Nhập Địa chỉ Email người gửi:
-smtp-prompt-from-name = Nhập Tên người gửi (ví dụ: PlayAural Support):
+smtp-prompt-from-name = Nhập Tên người gửi (ví dụ: PlaySonic Support):
 smtp-prompt-test-email = Nhập địa chỉ email đích để kiểm tra:
 smtp-enc-none = Không mã hóa
 smtp-enc-ssl = Sử dụng SSL
@@ -107,7 +107,7 @@ now-playing = { $player } đang chơi.
 now-spectating = { $player } đang xem.
 spectator-left = { $player } đã dừng xem.
 
-welcome = Chào mừng đến với PlayAural!
+welcome = Chào mừng đến với PlaySonic!
 goodbye = Tạm biệt!
 
 user-online = { $player } đã trực tuyến.
@@ -318,7 +318,7 @@ account-approved = Tài khoản của { $player } đã được duyệt.
 account-declined = Tài khoản của { $player } đã bị từ chối và xóa bỏ.
 
 waiting-for-approval = Tài khoản của bạn đang chờ quản trị viên phê duyệt. Vui lòng đợi...
-account-approved-welcome = Tài khoản của bạn đã được duyệt! Chào mừng đến với PlayAural!
+account-approved-welcome = Tài khoản của bạn đã được duyệt! Chào mừng đến với PlaySonic!
 account-declined-goodbye = Yêu cầu tài khoản của bạn đã bị từ chối.
 
 account-request = yêu cầu tài khoản
@@ -620,3 +620,4 @@ success-reset-email-sent = Mã khôi phục đã được gửi đến địa ch
 error-smtp-send-failed = Không thể gửi email khôi phục. Vui lòng thử lại sau.
 error-invalid-reset-code = Mã khôi phục không hợp lệ hoặc đã hết hạn.
 success-password-reset = Mật khẩu của bạn đã được đặt lại thành công. Bây giờ bạn có thể đăng nhập.
+

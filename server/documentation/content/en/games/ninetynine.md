@@ -6,7 +6,7 @@ Ninety Nine is a classic card game of survival and strategy. Players take turns 
 
 
 
-The game has been a staple in the blind gaming community for years. PlayAural supports two distinct variants: the standard 52-card deck and an action cards variant with a special 60-card deck. At its core, Ninety Nine is an elimination game: every player starts with a set of tokens, loses them for making mistakes, and is knocked out when they run dry. The last player standing wins.
+The game has been a staple in the blind gaming community for years. PlaySonic supports two distinct variants: the standard 52-card deck and an action cards variant with a special 60-card deck. At its core, Ninety Nine is an elimination game: every player starts with a set of tokens, loses them for making mistakes, and is knocked out when they run dry. The last player standing wins.
 
 
 
@@ -103,4 +103,5 @@ Players start with a pool of tokens (default 9). When a player reaches 0 tokens,
 \* \*\*C:\*\* Check the current count.
 
 \* \*\*Space or D:\*\* Draw a card (if manual draw is enabled).
+
 

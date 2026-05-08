@@ -40,7 +40,7 @@ Việc bạn bị mất trắng hay không tùy thuộc vào biến thể luật
 
 \* \*\*Tiêu chuẩn (Mặc định):\*\* Bạn mất trắng nếu gieo \*\*không ra màu xanh nào\*\* và có ít nhất một viên màu đỏ. Bạn cần ít nhất một màu xanh để sống sót, trừ khi tất cả xúc xắc gieo ra đều là màu vàng.
 
-\* \*\*PlayAural:\*\* Bạn chỉ mất trắng nếu \*\*tất cả xúc xắc\*\* đều gieo ra màu đỏ (không có màu xanh và cũng không có màu vàng).
+\* \*\*PlaySonic:\*\* Bạn chỉ mất trắng nếu \*\*tất cả xúc xắc\*\* đều gieo ra màu đỏ (không có màu xanh và cũng không có màu vàng).
 
 
 
@@ -62,7 +62,7 @@ Trò chơi tiếp tục cho đến khi có người đạt đến điểm mục 
 
 \* \*\*Số xúc xắc bắt đầu:\*\* Số viên xúc xắc mỗi người gieo mỗi lượt (mặc định 10, phạm vi 5-20).
 
-\* \*\*Biến thể luật:\*\* Tiêu chuẩn (nổ = không xanh + ít nhất một đỏ) hoặc PlayAural (nổ = toàn bộ xúc xắc đỏ).
+\* \*\*Biến thể luật:\*\* Tiêu chuẩn (nổ = không xanh + ít nhất một đỏ) hoặc PlaySonic (nổ = toàn bộ xúc xắc đỏ).
 
 
 
@@ -73,4 +73,5 @@ Trò chơi tiếp tục cho đến khi có người đạt đến điểm mục 
 \* \*\*R:\*\* Gieo xúc xắc.
 
 \* \*\*B:\*\* Chốt điểm.
+
 

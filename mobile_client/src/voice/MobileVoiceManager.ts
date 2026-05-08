@@ -9,7 +9,7 @@ import {
 
 type NativeLiveKitModule = typeof import("@livekit/react-native");
 type VoiceBootstrapGlobal = typeof globalThis & {
-  __PLAYAURAL_NATIVE_VOICE_BOOTSTRAP_ERROR__?: string;
+  __PlaySonic_NATIVE_VOICE_BOOTSTRAP_ERROR__?: string;
 };
 
 export type MobileVoiceConnectionState = "connected" | "connecting" | "disconnected";
@@ -341,7 +341,7 @@ export class MobileVoiceManager {
     if (Platform.OS === "web") {
       return null;
     }
-    if ((globalThis as VoiceBootstrapGlobal).__PLAYAURAL_NATIVE_VOICE_BOOTSTRAP_ERROR__) {
+    if ((globalThis as VoiceBootstrapGlobal).__PlaySonic_NATIVE_VOICE_BOOTSTRAP_ERROR__) {
       return null;
     }
     try {
@@ -432,3 +432,4 @@ export class MobileVoiceManager {
     };
   }
 }
+

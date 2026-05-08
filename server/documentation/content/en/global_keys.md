@@ -1,6 +1,6 @@
 \*\*Global Controls\*\*
 
-This guide explains the controls that work across PlayAural. Desktop players mainly use keyboard shortcuts. Mobile players mainly use built-in gestures. Both methods reach the same features.
+This guide explains the controls that work across PlaySonic. Desktop players mainly use keyboard shortcuts. Mobile players mainly use built-in gestures. Both methods reach the same features.
 
 \*\*Desktop Keyboard Shortcuts\*\*
 
@@ -28,7 +28,7 @@ This guide explains the controls that work across PlayAural. Desktop players mai
 
 \*\*Message Buffers\*\*
 
-PlayAural groups messages into separate buffers so you can review game messages, chat, and other information more easily.
+PlaySonic groups messages into separate buffers so you can review game messages, chat, and other information more easily.
 
 \* \*\*`[` / `]`:\*\* Move to the previous or next buffer.
 \* \*\*Shift + `[` / Shift + `]`:\*\* Jump to the first or last buffer.
@@ -70,3 +70,4 @@ The Shortcuts area gives mobile players quick access to important system feature
 \* \*\*Friends:\*\* Open your friends and social features.
 \* \*\*Ping server:\*\* Check connection latency.
 \* \*\*Online users:\*\* Open the online users list.
+

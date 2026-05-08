@@ -50,12 +50,12 @@ class TestTossUpGameUnit:
     def test_custom_options(self):
         """Test custom game options."""
         options = TossUpOptions(
-            target_score=200, starting_dice=15, rules_variant="PlayAural"
+            target_score=200, starting_dice=15, rules_variant="PlaySonic"
         )
         game = TossUpGame(options=options)
         assert game.options.target_score == 200
         assert game.options.starting_dice == 15
-        assert game.options.rules_variant == "PlayAural"
+        assert game.options.rules_variant == "PlaySonic"
 
     def test_serialization(self):
         """Test that game state can be serialized and deserialized."""
@@ -155,12 +155,12 @@ class TestTossUpGameActions:
         # We should have encountered at least one bust in 50 attempts
         assert busted, "Should encounter a bust scenario in Standard rules"
 
-    def test_roll_PlayAural_bust(self):
-        """Test bust condition in PlayAural rules (all red)."""
-        self.game.options.rules_variant = "PlayAural"
+    def test_roll_PlaySonic_bust(self):
+        """Test bust condition in PlaySonic rules (all red)."""
+        self.game.options.rules_variant = "PlaySonic"
 
         # Try multiple times to get a bust scenario
-        # A bust in PlayAural happens when green=0 and yellow=0 (all red)
+        # A bust in PlaySonic happens when green=0 and yellow=0 (all red)
         busted = False
         for attempt in range(50):
             # Reset player state for new attempt
@@ -180,7 +180,7 @@ class TestTossUpGameActions:
                 self.game.reset_turn_order()
 
         # We should have encountered at least one bust in 50 attempts
-        assert busted, "Should encounter a bust scenario in PlayAural rules"
+        assert busted, "Should encounter a bust scenario in PlaySonic rules"
 
     def test_fresh_dice(self):
         """Test that running out of dice gives fresh dice."""
@@ -335,12 +335,12 @@ class TestTossUpPlayTest:
 
         assert not game.game_active
 
-    def test_PlayAural_rules_variant(self):
-        """Test game with PlayAural rules."""
+    def test_PlaySonic_rules_variant(self):
+        """Test game with PlaySonic rules."""
         random.seed(789)
 
         game = TossUpGame(
-            options=TossUpOptions(target_score=30, rules_variant="PlayAural")
+            options=TossUpOptions(target_score=30, rules_variant="PlaySonic")
         )
         bot1 = Bot("Bot1")
         bot2 = Bot("Bot2")
@@ -356,7 +356,7 @@ class TestTossUpPlayTest:
             game.on_tick()
 
         assert not game.game_active
-        assert game.options.rules_variant == "PlayAural"
+        assert game.options.rules_variant == "PlaySonic"
 
     def test_standard_rules_variant(self):
         """Test game with Standard rules."""
@@ -485,7 +485,7 @@ class TestTossUpPersistence:
         """Test that all game state is preserved through save/load."""
         game = TossUpGame(
             options=TossUpOptions(
-                target_score=150, starting_dice=12, rules_variant="PlayAural"
+                target_score=150, starting_dice=12, rules_variant="PlaySonic"
             )
         )
         user1 = MockUser("Alice")
@@ -519,7 +519,7 @@ class TestTossUpPersistence:
         assert loaded.round == 6
         assert loaded.options.target_score == 150
         assert loaded.options.starting_dice == 12
-        assert loaded.options.rules_variant == "PlayAural"
+        assert loaded.options.rules_variant == "PlaySonic"
         assert loaded.get_player_score(loaded.players[0]) == 78
         assert loaded.players[0].turn_points == 18
         assert loaded.players[0].dice_count == 4
@@ -556,4 +556,5 @@ class TestTossUpPersistence:
 
 if __name__ == "__main__":
     pytest.main([__file__, "-v"])
+
 

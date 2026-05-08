@@ -7,24 +7,24 @@ auth-error-user-not-found = User does not exist.
 auth-kicked-logged-in-elsewhere = You have been disconnected because your account was logged in from another device.
 
 chat-global = { $player } says globally: { $message }
-dev-announcement-broadcast = { $dev } is a developer of PlayAural.
-admin-announcement-broadcast = { $admin } is an administrator of PlayAural.
+dev-announcement-broadcast = { $dev } is a developer of PlaySonic.
+admin-announcement-broadcast = { $admin } is an administrator of PlaySonic.
 
 admin-smtp-updated-success = SMTP setting updated successfully
 admin-smtp-settings = SMTP Settings
-email-reset-subject = PlayAural Password Reset Code
-email-reset-body = Hello { $username },\n\nYou requested a password reset for your PlayAural account.\nYour 6-digit reset code is: { $code }\n\nThis code will expire in 15 minutes.\nIf you did not request this, please ignore this email.
+email-reset-subject = PlaySonic Password Reset Code
+email-reset-body = Hello { $username },\n\nYou requested a password reset for your PlaySonic account.\nYour 6-digit reset code is: { $code }\n\nThis code will expire in 15 minutes.\nIf you did not request this, please ignore this email.
 email-reset-body-html = <p>Hi { $username },</p>
-    <p>We received a request to reset the password for your PlayAural account.</p>
+    <p>We received a request to reset the password for your PlaySonic account.</p>
     <p>Your 6-digit recovery code is:</p>
     <h2>{ $code }</h2>
     <p>This code will expire in exactly 15 minutes.</p>
     <p>If you did not request this, please ignore this email. Your account remains secure.</p>
     <p>Best regards,<br>Trung</p>
-email-test-subject = PlayAural SMTP Test
-email-test-body = This is a test email from the PlayAural server verifying your SMTP configuration.
+email-test-subject = PlaySonic SMTP Test
+email-test-body = This is a test email from the PlaySonic server verifying your SMTP configuration.
 email-test-body-html = <p>Hello,</p>
-    <p>This is a test email from the PlayAural server.</p>
+    <p>This is a test email from the PlaySonic server.</p>
     <p>If you are reading this, your SMTP configuration is successfully sending HTML emails.</p>
 smtp-test-sending = Testing connection, please wait...
 smtp-test-success = Test email sent successfully to { $email }!
@@ -43,7 +43,7 @@ smtp-prompt-port = Enter SMTP Port (e.g., 587 or 465):
 smtp-prompt-username = Enter SMTP Username:
 smtp-prompt-password = Enter SMTP Password:
 smtp-prompt-from-email = Enter From Email address:
-smtp-prompt-from-name = Enter From Name (e.g., PlayAural Support):
+smtp-prompt-from-name = Enter From Name (e.g., PlaySonic Support):
 smtp-prompt-test-email = Enter target email address for test:
 smtp-enc-none = No encryption
 smtp-enc-ssl = Use SSL
@@ -107,7 +107,7 @@ now-playing = { $player } is now playing.
 now-spectating = { $player } is now spectating.
 spectator-left = { $player } stopped spectating.
 
-welcome = Welcome to PlayAural!
+welcome = Welcome to PlaySonic!
 goodbye = Goodbye!
 
 user-online = { $player } came online.
@@ -318,7 +318,7 @@ account-approved = { $player }'s account has been approved.
 account-declined = { $player }'s account has been declined and deleted.
 
 waiting-for-approval = Your account is waiting for approval by an administrator. Please wait...
-account-approved-welcome = Your account has been approved! Welcome to PlayAural!
+account-approved-welcome = Your account has been approved! Welcome to PlaySonic!
 account-declined-goodbye = Your account request has been declined.
 
 account-request = account request
@@ -623,3 +623,4 @@ success-reset-email-sent = A reset code has been sent to your email address.
 error-smtp-send-failed = Failed to send the reset email. Please try again later.
 error-invalid-reset-code = Invalid or expired reset code.
 success-password-reset = Your password has been successfully reset. You can now log in.
+

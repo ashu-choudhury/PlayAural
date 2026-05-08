@@ -2,14 +2,14 @@
 
 set -u
 
-SERVICE_NAME="playaural"
-SERVICE_USER="playaural"
-VOICE_SERVICE_NAME="playaural-livekit"
+SERVICE_NAME="PlaySonic"
+SERVICE_USER="PlaySonic"
+VOICE_SERVICE_NAME="PlaySonic-livekit"
 VOICE_SERVICE_USER="livekit"
 
 SERVER_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 REPO_DIR="$(cd "$SERVER_DIR/.." && pwd)"
-CONFIG_DIR="/etc/playaural"
+CONFIG_DIR="/etc/PlaySonic"
 VOICE_ENV_FILE="$CONFIG_DIR/voice.env"
 LIVEKIT_CONFIG_FILE="$CONFIG_DIR/livekit.yaml"
 SERVICE_FILE="/etc/systemd/system/${SERVICE_NAME}.service"
@@ -135,13 +135,13 @@ normalize_voice_url() {
 }
 
 load_voice_config() {
-    PLAYAURAL_VOICE_ENABLED=""
-    PLAYAURAL_VOICE_PROVIDER=""
-    PLAYAURAL_VOICE_URL=""
-    PLAYAURAL_VOICE_API_KEY=""
-    PLAYAURAL_VOICE_API_SECRET=""
-    PLAYAURAL_VOICE_ROOM_PREFIX=""
-    PLAYAURAL_VOICE_TOKEN_TTL_SECONDS=""
+    PlaySonic_VOICE_ENABLED=""
+    PlaySonic_VOICE_PROVIDER=""
+    PlaySonic_VOICE_URL=""
+    PlaySonic_VOICE_API_KEY=""
+    PlaySonic_VOICE_API_SECRET=""
+    PlaySonic_VOICE_ROOM_PREFIX=""
+    PlaySonic_VOICE_TOKEN_TTL_SECONDS=""
     if [ -f "$VOICE_ENV_FILE" ]; then
         set -a
         # shellcheck disable=SC1090
@@ -158,13 +158,13 @@ write_voice_env() {
     local ttl="$5"
 
     cat >"$VOICE_ENV_FILE" <<EOF
-PLAYAURAL_VOICE_ENABLED=1
-PLAYAURAL_VOICE_PROVIDER=livekit
-PLAYAURAL_VOICE_URL=$public_url
-PLAYAURAL_VOICE_API_KEY=$api_key
-PLAYAURAL_VOICE_API_SECRET=$api_secret
-PLAYAURAL_VOICE_ROOM_PREFIX=$room_prefix
-PLAYAURAL_VOICE_TOKEN_TTL_SECONDS=$ttl
+PlaySonic_VOICE_ENABLED=1
+PlaySonic_VOICE_PROVIDER=livekit
+PlaySonic_VOICE_URL=$public_url
+PlaySonic_VOICE_API_KEY=$api_key
+PlaySonic_VOICE_API_SECRET=$api_secret
+PlaySonic_VOICE_ROOM_PREFIX=$room_prefix
+PlaySonic_VOICE_TOKEN_TTL_SECONDS=$ttl
 EOF
     chmod 600 "$VOICE_ENV_FILE"
 }
@@ -363,11 +363,11 @@ EOF
 
 ensure_livekit_config_from_env() {
     load_voice_config
-    if [ -z "${PLAYAURAL_VOICE_URL:-}" ] || [ -z "${PLAYAURAL_VOICE_API_KEY:-}" ] || [ -z "${PLAYAURAL_VOICE_API_SECRET:-}" ]; then
+    if [ -z "${PlaySonic_VOICE_URL:-}" ] || [ -z "${PlaySonic_VOICE_API_KEY:-}" ] || [ -z "${PlaySonic_VOICE_API_SECRET:-}" ]; then
         say_error "Voice configuration is incomplete. Run the voice configuration step first."
         return 1
     fi
-    write_livekit_config "$PLAYAURAL_VOICE_URL" "$PLAYAURAL_VOICE_API_KEY" "$PLAYAURAL_VOICE_API_SECRET"
+    write_livekit_config "$PlaySonic_VOICE_URL" "$PlaySonic_VOICE_API_KEY" "$PlaySonic_VOICE_API_SECRET"
 }
 
 install_base_packages() {
@@ -425,7 +425,7 @@ run_account_cli() {
     local password="$3"
     shift 3
 
-    (cd "$SERVER_DIR" && runuser -u "$SERVICE_USER" -- env PLAYAURAL_CLI_PW="$password" "$VENV_PYTHON" "$SERVER_DIR/cli.py" "$command_name" "$username" "$@")
+    (cd "$SERVER_DIR" && runuser -u "$SERVICE_USER" -- env PlaySonic_CLI_PW="$password" "$VENV_PYTHON" "$SERVER_DIR/cli.py" "$command_name" "$username" "$@")
 }
 
 setup_service() {
@@ -434,7 +434,7 @@ setup_service() {
 
     cat >"$SERVICE_FILE" <<EOF
 [Unit]
-Description=PlayAural Game Server
+Description=PlaySonic Game Server
 After=network-online.target
 Wants=network-online.target
 
@@ -465,7 +465,7 @@ setup_voice_service() {
 
     cat >"$VOICE_SERVICE_FILE" <<EOF
 [Unit]
-Description=PlayAural LiveKit Voice Server
+Description=PlaySonic LiveKit Voice Server
 After=network-online.target
 Wants=network-online.target
 
@@ -548,11 +548,11 @@ configure_voice_server() {
     ensure_config_dir
     load_voice_config
 
-    current_url="${PLAYAURAL_VOICE_URL:-wss://voice.example.com}"
-    current_key="${PLAYAURAL_VOICE_API_KEY:-PLAYAURAL_VOICE_API_KEY}"
-    current_secret="${PLAYAURAL_VOICE_API_SECRET:-$(random_token)}"
-    current_prefix="${PLAYAURAL_VOICE_ROOM_PREFIX:-playaural}"
-    current_ttl="${PLAYAURAL_VOICE_TOKEN_TTL_SECONDS:-900}"
+    current_url="${PlaySonic_VOICE_URL:-wss://voice.example.com}"
+    current_key="${PlaySonic_VOICE_API_KEY:-PlaySonic_VOICE_API_KEY}"
+    current_secret="${PlaySonic_VOICE_API_SECRET:-$(random_token)}"
+    current_prefix="${PlaySonic_VOICE_ROOM_PREFIX:-PlaySonic}"
+    current_ttl="${PlaySonic_VOICE_TOKEN_TTL_SECONDS:-900}"
 
     echo "--- Configure Voice Server ---"
     read -rp "Public Voice URL [$current_url]: " input_url
@@ -619,11 +619,11 @@ change_voice_url() {
     fi
 
     load_voice_config
-    current_url="${PLAYAURAL_VOICE_URL:-wss://voice.example.com}"
-    current_key="${PLAYAURAL_VOICE_API_KEY:-PLAYAURAL_VOICE_API_KEY}"
-    current_secret="${PLAYAURAL_VOICE_API_SECRET:-PLAYAURAL_VOICE_API_SECRET}"
-    current_prefix="${PLAYAURAL_VOICE_ROOM_PREFIX:-playaural}"
-    current_ttl="${PLAYAURAL_VOICE_TOKEN_TTL_SECONDS:-900}"
+    current_url="${PlaySonic_VOICE_URL:-wss://voice.example.com}"
+    current_key="${PlaySonic_VOICE_API_KEY:-PlaySonic_VOICE_API_KEY}"
+    current_secret="${PlaySonic_VOICE_API_SECRET:-PlaySonic_VOICE_API_SECRET}"
+    current_prefix="${PlaySonic_VOICE_ROOM_PREFIX:-PlaySonic}"
+    current_ttl="${PlaySonic_VOICE_TOKEN_TTL_SECONDS:-900}"
 
     echo "--- Change Voice Server URL / Domain ---"
     read -rp "New public Voice URL [$current_url]: " input_url
@@ -658,18 +658,18 @@ show_voice_config() {
 
     load_voice_config
 
-    if [ -n "${PLAYAURAL_VOICE_API_SECRET:-}" ]; then
-        secret_mask="${PLAYAURAL_VOICE_API_SECRET:0:4}********"
+    if [ -n "${PlaySonic_VOICE_API_SECRET:-}" ]; then
+        secret_mask="${PlaySonic_VOICE_API_SECRET:0:4}********"
     fi
 
     echo "--- Voice Configuration ---"
-    echo "Enabled:      ${PLAYAURAL_VOICE_ENABLED:-0}"
-    echo "Provider:     ${PLAYAURAL_VOICE_PROVIDER:-livekit}"
-    echo "Public URL:   ${PLAYAURAL_VOICE_URL:-not configured}"
-    echo "API key:      ${PLAYAURAL_VOICE_API_KEY:-not configured}"
+    echo "Enabled:      ${PlaySonic_VOICE_ENABLED:-0}"
+    echo "Provider:     ${PlaySonic_VOICE_PROVIDER:-livekit}"
+    echo "Public URL:   ${PlaySonic_VOICE_URL:-not configured}"
+    echo "API key:      ${PlaySonic_VOICE_API_KEY:-not configured}"
     echo "API secret:   $secret_mask"
-    echo "Room prefix:  ${PLAYAURAL_VOICE_ROOM_PREFIX:-playaural}"
-    echo "Token TTL:    ${PLAYAURAL_VOICE_TOKEN_TTL_SECONDS:-900}"
+    echo "Room prefix:  ${PlaySonic_VOICE_ROOM_PREFIX:-PlaySonic}"
+    echo "Token TTL:    ${PlaySonic_VOICE_TOKEN_TTL_SECONDS:-900}"
     if [ -f "$LIVEKIT_CONFIG_FILE" ]; then
         echo "LiveKit YAML: $LIVEKIT_CONFIG_FILE"
         echo "TURN enabled: $(awk '/^[[:space:]]*enabled:/ {print $2; exit}' "$LIVEKIT_CONFIG_FILE" 2>/dev/null)"
@@ -695,7 +695,7 @@ check_status() {
     fi
 
     load_voice_config
-    echo "Voice URL:    ${PLAYAURAL_VOICE_URL:-not configured}"
+    echo "Voice URL:    ${PlaySonic_VOICE_URL:-not configured}"
 }
 
 start_server() {
@@ -912,7 +912,7 @@ uninstall_service() {
 show_menu() {
     clear
     echo "=================================================="
-    echo " PlayAural Server and Voice Manager"
+    echo " PlaySonic Server and Voice Manager"
     echo " Repo:  $REPO_DIR"
     echo " Server: $SERVER_DIR"
     echo "=================================================="
@@ -969,3 +969,4 @@ while true; do
         *) say_error "Invalid option."; pause_screen ;;
     esac
 done
+

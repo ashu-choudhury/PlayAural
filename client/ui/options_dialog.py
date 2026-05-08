@@ -1,4 +1,4 @@
-"""Client Options Profile dialog for PlayAural client."""
+"""Client Options Profile dialog for PlaySonic client."""
 
 import wx
 from . import uisound

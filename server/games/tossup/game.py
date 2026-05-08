@@ -62,10 +62,10 @@ class TossUpOptions(GameOptions):
         MenuOption(
             default="Standard",
             value_key="variant",
-            choices=lambda g, p: ["Standard", "PlayAural"],
+            choices=lambda g, p: ["Standard", "PlaySonic"],
             choice_labels={
                 "Standard": "tossup-rules-standard",
-                "PlayAural": "tossup-rules-PlayAural",
+                "PlaySonic": "tossup-rules-PlaySonic",
             },
             label="tossup-set-rules-variant",
             prompt="tossup-select-rules-variant",
@@ -82,7 +82,7 @@ class TossUpGame(Game):
 
     Roll dice with green/yellow/red sides. Green dice add points and are removed.
     Yellow dice are removed but don't add points. Red dice stay in play.
-    Bust if all dice show red (PlayAural) or if you have no greens and at least
+    Bust if all dice show red (PlaySonic) or if you have no greens and at least
     one red (Standard). Bank your points or keep rolling - but don't bust!
     When you run out of dice, you get a fresh set. First to reach target score wins.
     """
@@ -309,7 +309,7 @@ class TossUpGame(Game):
                 else:
                     red += 1
             else:
-                # PlayAural: Equal distribution (3-sided die)
+                # PlaySonic: Equal distribution (3-sided die)
                 roll = random.randint(1, 3)
                 if roll == 1:
                     green += 1
@@ -340,7 +340,7 @@ class TossUpGame(Game):
             # Standard: Bust if you have at least one red AND no greens
             is_bust = green == 0 and red > 0
         else:
-            # PlayAural: Bust if all red (no green, no yellow)
+            # PlaySonic: Bust if all red (no green, no yellow)
             is_bust = green == 0 and yellow == 0
 
         if is_bust:
@@ -690,3 +690,4 @@ class TossUpGame(Game):
         if red > 0:
             parts.append(Localization.get(locale, "tossup-result-red", count=red))
         return Localization.format_list_and(locale, parts)
+

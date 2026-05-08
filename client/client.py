@@ -1,6 +1,6 @@
 """
-PlayAural Client
-A wxPython-based client for PlayAural with websocket support.
+PlaySonic Client
+A wxPython-based client for PlaySonic with websocket support.
 Features:
 - Menu list with multiletter navigation (toggle-able)
 - Chat input
@@ -30,7 +30,7 @@ logging.basicConfig(
 version = "1.0.4.4"
 
 def main():
-    """Main entry point for the PlayAural client."""
+    """Main entry point for the PlaySonic client."""
     # Move imports here to ensure CWD is set first
     from ui import MainWindow
     from ui.login_dialog import LoginDialog
@@ -46,8 +46,8 @@ def main():
     locale = config_manager.get_client_options().get("interface_language", "en")
     
     from localization import Localization
-    logging.getLogger("playaural").info(
-        f"Starting PlayAural Client v{version} (Locale: {locale})"
+    logging.getLogger("PlaySonic").info(
+        f"Starting PlaySonic Client v{version} (Locale: {locale})"
     )
     Localization.init(locale=locale)
 
@@ -70,7 +70,7 @@ def main():
         if login_dialog.account_id and not came_from_failure:
             account = login_dialog.config_manager.get_account_by_id(login_dialog.server_id, login_dialog.account_id)
             if account and account.get("auto_login", False):
-                logging.getLogger("playaural").info("Auto-login: using cached credentials.")
+                logging.getLogger("PlaySonic").info("Auto-login: using cached credentials.")
                 credentials = {
                     "username": account["username"],
                     "password": account["password"],
@@ -112,3 +112,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+

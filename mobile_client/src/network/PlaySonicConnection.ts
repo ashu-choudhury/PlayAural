@@ -7,7 +7,7 @@ type ConnectionHandlers = {
   onPacket: (packet: ServerPacket) => void;
 };
 
-export class PlayAuralConnection {
+export class PlaySonicConnection {
   private socket: WebSocket | null = null;
   private readonly intentionallyClosingSockets = new Set<WebSocket>();
   private readonly closeWaiters = new Map<WebSocket, Set<() => void>>();
@@ -205,3 +205,4 @@ export class PlayAuralConnection {
     }
   }
 }
+

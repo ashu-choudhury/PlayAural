@@ -1,4 +1,4 @@
-﻿"""Pytest configuration and fixtures."""
+"""Pytest configuration and fixtures."""
 
 import pytest
 import shutil
@@ -20,7 +20,7 @@ Localization.init(_locales_dir)
 @pytest.fixture
 def tmp_path() -> Path:
     """Use a dedicated temp root that is writable for pytest and SQLite."""
-    base = Path(tempfile.gettempdir()) / "playaural-tests"
+    base = Path(tempfile.gettempdir()) / "PlaySonic-tests"
     base.mkdir(parents=True, exist_ok=True)
     path = base / f"tmp_{uuid.uuid4().hex}"
     path.mkdir(parents=True, exist_ok=True)
@@ -66,4 +66,5 @@ def pig_game_with_players():
     game.add_player("Alice", user1)
     game.add_player("Bob", user2)
     return game, user1, user2
+
 

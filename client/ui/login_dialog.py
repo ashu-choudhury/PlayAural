@@ -1,4 +1,4 @@
-"""Login dialog for PlayAural client."""
+"""Login dialog for PlaySonic client."""
 
 import re
 import threading
@@ -41,7 +41,7 @@ class LoginDialog(wx.Dialog):
         self.server_id = "official_server"  # Using a fixed ID for the "Official" server
         # Ensure this server exists in config, if not create it default to official server
         if not self.config_manager.get_server_by_id(self.server_id):
-            self.config_manager.add_server("Official Server", "wss://playaural.ddt.one", "443", server_id=self.server_id)
+            self.config_manager.add_server("Official Server", "wss://PlaySonic.ddt.one", "443", server_id=self.server_id)
         
         self.server_url = self.config_manager.get_server_url(self.server_id)
 
@@ -674,3 +674,4 @@ class LoginDialog(wx.Dialog):
             "account_id": self.account_id,
             "config_manager": self.config_manager,
         }
+

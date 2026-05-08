@@ -2,7 +2,7 @@
 
 Tiến Lên là trò chơi bài leo thang rất quen thuộc ở Việt Nam, nơi người chơi phải biết lúc nào nên xả rác, lúc nào nên giữ Heo, lúc nào nên ém tứ quý hoặc đôi thông để chặt. Mục tiêu không phải là ăn điểm từng vòng bài, mà là \*\*đánh hết bài trên tay trước những người còn lại\*\*.
 
-Trong PlayAural, bàn Tiến Lên có hai biến thể:
+Trong PlaySonic, bàn Tiến Lên có hai biến thể:
 
 \* \*\*Tiến Lên Miền Nam\*\* - thoáng hơn, linh hoạt hơn, nhiều tình huống chặt hơn.
 \* \*\*Tiến Lên Miền Bắc / Tú Lơ Khơ\*\* - chặt chẽ hơn, yêu cầu đúng màu, đúng chất, và có thêm hạn chế với Heo.
@@ -20,7 +20,7 @@ Tiến Lên dùng bộ bài tây 52 lá. Mỗi người chơi được chia 13 l
 \* \*\*Dọn vòng:\*\* Khi tất cả người chơi khác đều bỏ lượt, người vừa đánh hợp lệ cuối cùng sẽ ăn vòng và được quyền khai bộ mới.
 \* \*\*Kết thúc ván:\*\* Ván kết thúc ngay khi có người đánh hết bài.
 
-Trong PlayAural, bạn chọn một hoặc nhiều lá trên tay, rồi dùng lệnh \*\*Đánh các lá đang chọn\*\* để ra bộ bài đó.
+Trong PlaySonic, bạn chọn một hoặc nhiều lá trên tay, rồi dùng lệnh \*\*Đánh các lá đang chọn\*\* để ra bộ bài đó.
 
 \*\*Các Bộ Bài Hợp Lệ\*\*
 
@@ -72,7 +72,7 @@ Ví dụ bộ hợp lệ theo luật Miền Nam:
 \* \*\*Chặt tứ quý:\*\*
 \* \*\*Bốn đôi thông\*\* chặt được tứ quý.
 
-Lưu ý cách áp dụng trong PlayAural:
+Lưu ý cách áp dụng trong PlaySonic:
 
 \* Trong phiên bản này, \*\*ba đôi thông không được dùng để khai vòng\*\*.
 \* Nói cách khác, ba đôi thông được xem là bộ phản đòn mạnh, không phải bộ để mở đầu một vòng bài trống.
@@ -126,7 +126,7 @@ Miền Bắc có thêm một điều rất quan trọng:
 
 \*\*Cách Tính Thắng\*\*
 
-Phiên bản PlayAural này không dùng luật ăn tiền ngoài đời. Thay vào đó, bàn được tính theo \*\*số ván thắng\*\*.
+Phiên bản PlaySonic này không dùng luật ăn tiền ngoài đời. Thay vào đó, bàn được tính theo \*\*số ván thắng\*\*.
 
 \* Mỗi lần đánh hết bài trước, bạn nhận \*\*1 ván thắng\*\*.
 \* Trận đấu kết thúc khi có người đạt mốc đã chọn:
@@ -149,3 +149,4 @@ Phiên bản PlayAural này không dùng luật ăn tiền ngoài đời. Thay v
 \* \*\*E:\*\* Đọc số lá còn lại của từng người.
 \* \*\*V:\*\* Nghe biến thể đang chơi.
 \* \*\*Shift+T:\*\* Kiểm tra thời gian lượt.
+

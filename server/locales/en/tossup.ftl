@@ -36,11 +36,12 @@ tossup-enter-starting-dice = Enter the number of starting dice:
 tossup-option-changed-dice = Starting dice changed to { $count }
 
 tossup-rules-standard = Standard
-tossup-rules-PlayAural = PlayAural
+tossup-rules-PlaySonic = PlaySonic
 
 tossup-rules-standard-desc = 3 green, 2 yellow, 1 red per die. Bust if no greens and at least one red.
-tossup-rules-PlayAural-desc = Equal distribution. Bust if all dice are red.
+tossup-rules-PlaySonic-desc = Equal distribution. Bust if all dice are red.
 
 tossup-need-points = You need points to bank.
 
 tossup-line-format = { $rank }. { $player }: { $points }
+

@@ -190,7 +190,7 @@ Saturday 11 April 2026
 
 Mobile Client Updates:
 
-Officially launched the PlayAural mobile application. Currently, the app is only available for Android devices.
+Officially launched the PlaySonic mobile application. Currently, the app is only available for Android devices.
 
 Integrated a built-in self-voicing feature. This allows you to fully enjoy the game with your device's system screen reader turned off. We highly recommend playing with your system screen reader disabled, as it allows you to use our custom quick gestures smoothly and without any interference.
 
@@ -312,7 +312,7 @@ Fixed minor audio routing issues to ensure all winner announcements play correct
 
 Wednesday 25 March 2026
 
-Welcome to the first version of PlayAural. This is an audio-first online gaming platform designed to be fully accessible for blind players.
+Welcome to the first version of PlaySonic. This is an audio-first online gaming platform designed to be fully accessible for blind players.
 
 Added 25 different games across several game families, including card games like Ninety Nine, dice games, adventure games like Battleship, and social games like Coup.
 
@@ -327,4 +327,5 @@ Added a complete account system to save progress, skill ratings, add friends, an
 Added a spectator mode, allowing players to join tables and listen to ongoing games.
 
 Added comprehensive keyboard shortcuts for desktop users and simple, easy-to-use button layouts for mobile players.
+
 

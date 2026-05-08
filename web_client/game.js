@@ -22,7 +22,7 @@ async function ensureRecaptchaReady() {
 
     if (!recaptchaReadyPromise) {
         recaptchaReadyPromise = new Promise((resolve) => {
-            const existing = document.querySelector('script[data-recaptcha="playaural"]');
+            const existing = document.querySelector('script[data-recaptcha="PlaySonic"]');
             if (existing) {
                 existing.addEventListener('load', () => {
                     if (typeof grecaptcha !== 'undefined' && typeof grecaptcha.ready === 'function') {
@@ -39,7 +39,7 @@ async function ensureRecaptchaReady() {
             script.src = `https://www.google.com/recaptcha/api.js?render=${RECAPTCHA_SITE_KEY}`;
             script.async = true;
             script.defer = true;
-            script.dataset.recaptcha = "playaural";
+            script.dataset.recaptcha = "PlaySonic";
             script.onload = () => {
                 if (typeof grecaptcha !== 'undefined' && typeof grecaptcha.ready === 'function') {
                     grecaptcha.ready(() => resolve(true));
@@ -909,7 +909,7 @@ class GameClient {
 
     loadConfig() {
         try {
-            const configStr = localStorage.getItem('playaural_config');
+            const configStr = localStorage.getItem('PlaySonic_config');
             if (configStr) {
                 const config = JSON.parse(configStr);
 
@@ -968,7 +968,7 @@ class GameClient {
             ambienceVolume: this.ambienceVolume,
             preferences: this.preferences, // Save flat preferences
         };
-        localStorage.setItem('playaural_config', JSON.stringify(config));
+        localStorage.setItem('PlaySonic_config', JSON.stringify(config));
 
         // Save Credentials if "Remember Me" is checked.
         // When checked: password persists in localStorage (explicit user opt-in).
@@ -3276,7 +3276,7 @@ class GameClient {
             ? localStorage.getItem('pa_pass')
             : sessionStorage.getItem('pa_pass');
         // Retrieve loaded URL from input (restored by loadConfig)
-        const serverUrl = document.getElementById('server-url').value || "wss://playaural.ddt.one:443";
+        const serverUrl = document.getElementById('server-url').value || "wss://PlaySonic.ddt.one:443";
 
         console.log(`Auto-login: user=${storedUser}, pass exists=${!!storedPass}, url=${serverUrl}`);
 
@@ -3289,7 +3289,7 @@ class GameClient {
     }
 
     async requestPasswordReset() {
-        const serverUrl = document.getElementById('server-url').value || "wss://playaural.ddt.one:443";
+        const serverUrl = document.getElementById('server-url').value || "wss://PlaySonic.ddt.one:443";
         const email = document.getElementById('forgot-email').value;
 
         if (!email || email.trim() === "") {
@@ -3357,7 +3357,7 @@ class GameClient {
     }
 
     async submitResetCode() {
-        const serverUrl = document.getElementById('server-url').value || "wss://playaural.ddt.one:443";
+        const serverUrl = document.getElementById('server-url').value || "wss://PlaySonic.ddt.one:443";
         const email = this.resetEmail || document.getElementById('forgot-email').value;
         const code = document.getElementById('reset-code').value;
         const newPassword = document.getElementById('new-password').value;
@@ -3725,3 +3725,4 @@ function bootstrapGameClient() {
 }
 
 bootstrapGameClient();
+

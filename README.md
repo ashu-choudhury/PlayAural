@@ -1,8 +1,8 @@
-# PlayAural
+# PlaySonic
 
-PlayAural is an audio-first online multiplayer gaming platform designed for blind and low-vision players, while remaining welcoming to anyone who wants accessible, speech-friendly games. It combines spoken feedback, structured sound design, multiplayer tables, and synchronized game logic across desktop, web, and mobile clients.
+PlaySonic is an audio-first online multiplayer gaming platform designed for blind and low-vision players, while remaining welcoming to anyone who wants accessible, speech-friendly games. It combines spoken feedback, structured sound design, multiplayer tables, and synchronized game logic across desktop, web, and mobile clients.
 
-PlayAural is built upon the open-source foundation of [PlayPalace](https://github.com/XGDevGroup/PlayPalace11).
+PlaySonic is built upon the open-source foundation of [PlayPalace](https://github.com/XGDevGroup/PlayPalace11).
 
 ## Play Now
 
@@ -19,7 +19,7 @@ PlayAural is built upon the open-source foundation of [PlayPalace](https://githu
 
 ## Platform Components
 
-PlayAural is organized around the following components:
+PlaySonic is organized around the following components:
 
 - `server/` - Python async WebSocket game server with authentication, tables, persistence, moderation, localization, and game rules
 - `client/` - wxPython desktop client with keyboard-first screen reader UX, local sound playback, and integrated table voice chat
@@ -29,7 +29,7 @@ PlayAural is organized around the following components:
 
 ## Accessibility
 
-PlayAural is designed so the full state of the platform can be followed without depending on visuals.
+PlaySonic is designed so the full state of the platform can be followed without depending on visuals.
 
 - The desktop client supports keyboard-first play and screen readers.
 - The web client supports browser-based play with ARIA-friendly controls.
@@ -38,7 +38,7 @@ PlayAural is designed so the full state of the platform can be followed without 
 
 ## Game Catalog
 
-PlayAural currently includes **36 games** across backend categories:
+PlaySonic currently includes **36 games** across backend categories:
 
 - Card games such as Blackjack, Last Card, Crazy Eights, Pusoy Dos, Tien Len, Scopa, Ninety Nine, Mile by Mile, Citadels, Coup, Dead Man's Deck, and Dominos
 - Poker games such as Texas Hold'em, Five Card Draw, and Dead Man's Poker
@@ -49,7 +49,7 @@ PlayAural currently includes **36 games** across backend categories:
 
 ## Voice Chat
 
-PlayAural separates voice authorization from media transport.
+PlaySonic separates voice authorization from media transport.
 
 - The game server verifies whether a player is allowed to join the current table's voice chat.
 - A dedicated LiveKit-based voice service carries the real-time media stream.
@@ -58,7 +58,7 @@ PlayAural separates voice authorization from media transport.
 
 ## Languages
 
-PlayAural currently supports:
+PlaySonic currently supports:
 
 - English
 - Vietnamese
@@ -73,8 +73,9 @@ PlayAural currently supports:
 
 ## Open Source
 
-PlayAural is released as open-source software. Public source code and release builds are distributed through this repository.
+PlaySonic is released as open-source software. Public source code and release builds are distributed through this repository.
 
 ## License
 
 This project is licensed under the **GNU GENERAL PUBLIC LICENSE**. See [LICENSE](LICENSE) for the full text.
+

@@ -3,9 +3,9 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "playaural-client"
+name = "PlaySonic-client"
 version = "1.0.0"
-description = "PlayAural Game Client"
+description = "PlaySonic Game Client"
 readme = "../README.md"
 requires-python = ">=3.11"
 dependencies = [
@@ -22,7 +22,8 @@ dependencies = [
 ]
 
 [project.scripts]
-playaural-client = "client:main"
+PlaySonic-client = "client:main"
 
 [tool.hatch.build.targets.wheel]
 packages = ["."]
+

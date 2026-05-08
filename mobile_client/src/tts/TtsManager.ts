@@ -26,7 +26,7 @@ export type TtsVoiceOption = {
   language: string;
 };
 
-const DEBUG_PREFIX = "PLAYAURAL_DEBUG TTS";
+const DEBUG_PREFIX = "PlaySonic_DEBUG TTS";
 const MIN_SPEECH_RATE = 0.1;
 const MAX_SPEECH_RATE = 10;
 
@@ -468,3 +468,4 @@ export class TtsManager {
     console.info(DEBUG_PREFIX, event, text ? { text } : "");
   }
 }
+
